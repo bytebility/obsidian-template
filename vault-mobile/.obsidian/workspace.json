@@ -103,7 +103,7 @@
       {
         "id": "0dcb57c09f00a844",
         "type": "tabs",
-        "dimension": 31.82711198428291,
+        "dimension": 26.917613636363637,
         "children": [
           {
             "id": "6b3652b59febae87",
@@ -116,17 +116,7 @@
             }
           },
           {
-            "id": "56bedda394d016fb",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
-          },
-          {
-            "id": "e56d8d9b7c3944df",
+            "id": "ff93d51461ffa00e",
             "type": "leaf",
             "state": {
               "type": "netClip_workspace_webview",
@@ -140,7 +130,7 @@
       {
         "id": "d9eb354692e3fb4f",
         "type": "tabs",
-        "dimension": 68.17288801571709,
+        "dimension": 73.08238636363636,
         "children": [
           {
             "id": "93cd81f982d06831",
@@ -214,8 +204,19 @@
               "icon": "links-going-out",
               "title": "Home 的出链列表"
             }
+          },
+          {
+            "id": "62ec4c289b76850a",
+            "type": "leaf",
+            "state": {
+              "type": "infio-chat-view",
+              "state": {},
+              "icon": "wand-sparkles",
+              "title": "Infio chat"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -240,11 +241,13 @@
       "quickadd:QuickAdd": false,
       "canvas:新建白板": false,
       "net-clip:NetClip": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "infio-copilot:打开 Infio Copilot": false
     }
   },
-  "active": "d0fae1f688a5b9ce",
+  "active": "6b3652b59febae87",
   "lastOpenFiles": [
+    "_infio_prompts",
     "Diary/2025/2025-06-12.md",
     "Home.md",
     "Home/Home.canvas",

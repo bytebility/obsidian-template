@@ -1,0 +1,65 @@
+{
+  "id": "e72f423e-e61f-4440-bddb-4a1348c7251a",
+  "title": "常青笔记如何实践",
+  "messages": [
+    {
+      "role": "user",
+      "applyStatus": 0,
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "常青笔记如何实践",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "<task>\n常青笔记如何实践\n</task>\n\n<environment_details>\n# Obsidian Current File\n(No current file)\n\n# Obsidian Open Tabs\n(No open tabs)\n\n# Current Time\n6/20/2025, 12:03:18 PM (Asia/Shanghai, UTC+8:00)\n\n# Current Mode\n<slug>ask</slug>\n<name>Ask</name>\n</environment_details>"
+        }
+      ],
+      "id": "cbe7d084-243d-4259-a027-5a2a8ef6aed3",
+      "mentionables": []
+    },
+    {
+      "role": "assistant",
+      "applyStatus": 0,
+      "content": "<thinking>\n1. 用户询问如何实践\"常青笔记\"方法，这是一个知识管理方法\n2. 我需要先理解什么是常青笔记，然后解释实践方法\n3. 常青笔记(Evergreen Notes)是由Nicole van der Hoeven等提出的笔记方法，强调持续更新和连接",
+      "reasoningContent": "",
+      "id": "95655f8a-561f-4a66-8ce6-47f1b4c74b90",
+      "metadata": {
+        "model": {
+          "provider": "OpenRouter",
+          "modelId": "deepseek/deepseek-chat-v3-0324:free"
+        }
+      }
+    }
+  ],
+  "createdAt": 1750392199316,
+  "updatedAt": 1750392203897,
+  "schemaVersion": 1
+}
