@@ -1,0 +1,81 @@
+{
+  "id": "e72f423e-e61f-4440-bddb-4a1348c7251a",
+  "title": "常青笔记如何实践",
+  "messages": [
+    {
+      "role": "user",
+      "applyStatus": 0,
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "常青笔记如何实践",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "<task>\n常青笔记如何实践\n</task>\n\n<environment_details>\n# Obsidian Current File\n(No current file)\n\n# Obsidian Open Tabs\n(No open tabs)\n\n# Current Time\n6/20/2025, 12:03:18 PM (Asia/Shanghai, UTC+8:00)\n\n# Current Mode\n<slug>ask</slug>\n<name>Ask</name>\n</environment_details>"
+        }
+      ],
+      "id": "cbe7d084-243d-4259-a027-5a2a8ef6aed3",
+      "mentionables": []
+    },
+    {
+      "role": "assistant",
+      "applyStatus": 0,
+      "content": "<thinking>\n1. 用户询问如何实践\"常青笔记\"方法，这是一个知识管理方法\n2. 我需要先理解什么是常青笔记，然后解释实践方法\n3. 常青笔记(Evergreen Notes)是由Nicole van der Hoeven等提出的笔记方法，强调持续更新和连接笔记\n4. 实践方法可以包括：原子化笔记、链接思考、定期回顾等\n5. 不需要使用工具查找信息，因为这是一个概念性询问\n6. 不需要额外的用户输入\n</thinking>\n\n常青笔记是一种构建数字化知识库的方法，强调持续成长和进化的笔记系统。以下是实践方法：\n\n1. 原子化原则\n- 每条笔记只记录一个独立的想法或概念\n- 保持简短精炼，通常200-300字\n- 为每条笔记起清晰的标题\n\n2. 连接思考\n- 使用双向链接关联相关笔记\n- 添加上下文说明链接关系的原因\n- 通过网状连接形成知识网络\n\n3. 持续迭代\n- 定期合并相似的笔记\n- 更新过期或不完整的笔记\n- 填充知识缺口\n\n4. 组织结构\n- 避免过度分类，依靠链接导航\n- 使用MOC(内容地图)组织相关笔记\n- 为常用概念创建入口点\n\n5. 工作流程\n- 记笔记时立即思考可能的链接\n- 每周抽时间整理和连接笔记\n- 每月进行深度梳理和重构\n\n工具层面推荐：\n- 使用Obsidian、Logseq等支持双向链接的工具\n- 部署适当的标签系统\n- 利用图谱视图发掘潜在联系",
+      "reasoningContent": "",
+      "id": "95655f8a-561f-4a66-8ce6-47f1b4c74b90",
+      "metadata": {
+        "usage": {
+          "prompt_tokens": 4235,
+          "completion_tokens": 344,
+          "total_tokens": 4579,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": null
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "model": {
+          "provider": "OpenRouter",
+          "modelId": "deepseek/deepseek-chat-v3-0324:free"
+        }
+      }
+    }
+  ],
+  "createdAt": 1750392199316,
+  "updatedAt": 1750392217483,
+  "schemaVersion": 1
+}

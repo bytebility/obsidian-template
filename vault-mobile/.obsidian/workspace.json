@@ -35,9 +35,33 @@
               "icon": "home",
               "title": "Home"
             }
+          },
+          {
+            "id": "9a6600289c983874",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Readme.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Readme"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -245,7 +269,7 @@
       "infio-copilot:打开 Infio Copilot": false
     }
   },
-  "active": "6b3652b59febae87",
+  "active": "9a6600289c983874",
   "lastOpenFiles": [
     "_infio_prompts",
     "Diary/2025/2025-06-12.md",

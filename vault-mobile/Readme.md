@@ -3,7 +3,7 @@ title: Readme
 aliases: [轻松做好周总结：PDCA 循环 + Obsidian 自动化工作流]
 tags: []
 created: 2025-03-23T09:10:01
-updated: 2025-06-12T11:30:50
+updated: 2025-06-20T12:04:08
 draft: true
 ---
 
@@ -81,11 +81,10 @@ draft: true
 
 ### AI 增强
 * AI 总结/提示词管理：[quickadd](obsidian://show-plugin?id=quickadd)，启用 AI Assistant
-* AI 对话/RAG 问答：[copilot](obsidian://show-plugin?id=copilot)，支持本地笔记的 rag 搜索
+* AI 对话/RAG 问答：[infio-copilot](obsidian://show-plugin?id=infio-copilot)，支持本地笔记的 rag 搜索,MCP 集成
 * AI 对话：[chatgpt-md](obsidian://show-plugin?id=chatgpt-md)，覆盖广，支持 ollama,chatgpt,openRouter，基本能使用所有大模型
 * 本地大模型服务：[ai-providers](obsidian://show-plugin?id=ai-providers),可对接本地的 LmStudio
 * 本地 AI 助手：[local-gpt](obsidian://show-plugin?id=local-gpt)，支持提示词管理，右键
-* AI-IDE：[[smart-composer]]
 
 ### 视图管理
 
