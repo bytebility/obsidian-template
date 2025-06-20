@@ -118,13 +118,36 @@
                 }
               },
               {
-                "id": "56bedda394d016fb",
+                "id": "c9b56a4a295aa010",
                 "type": "leaf",
                 "state": {
-                  "type": "empty",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "新标签页"
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home/Home.canvas",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Home 的反向链接列表"
+                }
+              },
+              {
+                "id": "c1bbf3e1e4b83551",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home/Home.canvas",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Home 的出链列表"
                 }
               }
             ]
@@ -145,6 +168,16 @@
                 }
               },
               {
+                "id": "0b5f536206f228b3",
+                "type": "leaf",
+                "state": {
+                  "type": "infio-chat-view",
+                  "state": {},
+                  "icon": "wand-sparkles",
+                  "title": "Infio chat"
+                }
+              },
+              {
                 "id": "4ac5bf1a825df673",
                 "type": "leaf",
                 "state": {
@@ -157,25 +190,6 @@
                   },
                   "icon": "lucide-list",
                   "title": "Home 的大纲"
-                }
-              },
-              {
-                "id": "c9b56a4a295aa010",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "Home/Home.canvas",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "Home 的反向链接列表"
                 }
               },
               {
@@ -192,20 +206,6 @@
                   "icon": "lucide-tags",
                   "title": "标签"
                 }
-              },
-              {
-                "id": "c1bbf3e1e4b83551",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "Home/Home.canvas",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-going-out",
-                  "title": "Home 的出链列表"
-                }
               }
             ]
           }
@@ -215,6 +215,8 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "smart-composer:Open smart composer": false,
+          "infio-copilot:打开 Infio Copilot": false,
           "switcher:打开快速切换": false,
           "graph:查看关系图谱": false,
           "daily-notes:打开/创建今天的日记": false,
@@ -225,20 +227,17 @@
           "workspaces:管理工作区布局": false,
           "templater-obsidian:Templater": false,
           "outliner-md:New outliner file": false,
-          "obsidian-weread-plugin:同步微信读书笔记": false,
           "homepage:Open homepage": false,
           "omnisearch:Omnisearch": false,
           "obsidian-git:Open Git source control": false,
           "quickadd:QuickAdd": false,
-          "nutstore-sync:开始同步": false,
-          "nutstore-sync:停止同步": false,
           "canvas:新建白板": false,
           "periodic-notes:Open today": false,
           "net-clip:NetClip": false
         }
       },
-      "active": "d0fae1f688a5b9ce",
-      "mtime": "2025-06-12T11:32:55+08:00"
+      "active": "6b3652b59febae87",
+      "mtime": "2025-06-20T12:05:01+08:00"
     }
   },
   "active": "default"
