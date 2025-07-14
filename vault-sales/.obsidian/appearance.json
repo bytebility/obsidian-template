@@ -1,0 +1,13 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "Primary",
+  "translucency": false,
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "Dataview",
+    "Use full length for note",
+    "Dashboard",
+    "supercharged-links-gen"
+  ],
+  "baseFontSizeAction": false
+}

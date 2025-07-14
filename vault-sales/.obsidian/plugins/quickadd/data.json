@@ -1,0 +1,171 @@
+{
+  "choices": [
+    {
+      "id": "e037f3cf-ba9b-4aa8-8582-6ce32db6f1b4",
+      "name": "Ask for employer",
+      "type": "Macro",
+      "command": true,
+      "macroId": "be84bfd4-8f10-4249-87e8-d86e9076196f"
+    },
+    {
+      "id": "d056900e-c072-45a5-a5fd-d8834790692a",
+      "name": "PasteInfo",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\ntags: CRM, {{VALUE:TAG}}\n---\nEmployer:: [[{{VALUE:EMPLOYER}}]]"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "068d180f-a8a1-470c-9352-f90844194b7a",
+      "name": "FinishMeeting",
+      "type": "Macro",
+      "command": true,
+      "macroId": "d431574a-92b3-4beb-b7cf-4d4ac8a8b5b4"
+    },
+    {
+      "id": "74f7ab8f-c5d0-4a62-aec6-425582950f02",
+      "name": "SetupNewCustomer",
+      "type": "Macro",
+      "command": true,
+      "macroId": "9f13b5d5-aa23-4831-89ea-2a3f176cc6ff"
+    },
+    {
+      "id": "a0a25434-171c-4722-bfd8-fbda5f2b440d",
+      "name": "SetupNewMeeting",
+      "type": "Macro",
+      "command": true,
+      "macroId": "a8cf5554-17bb-4b61-87cd-d0d6e9a09a67"
+    },
+    {
+      "id": "66984e55-ff20-4a31-85c1-cba90186bd8d",
+      "name": "PasteMeetingInfo",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "---\ntags: meeting, future\n---\n```button\nname Finish Meeting\ntype command\naction QuickAdd: FinishMeeting\ncolor yellow\nremove true\n```\n^button-y9qv\n#### Metadata\nProject:: [[{{VALUE:PROJECT}}]]\nDate:: [[{{VALUE:DATE}}]]\n\n# Preparation\n- [ ] Prepare for meeting 📅 {{VALUE:TODODATE}}\n\n# Agenda & files\n- \n\n# Attendees\n- \n\n# Notes\n- \n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Ask for employer",
+      "id": "be84bfd4-8f10-4249-87e8-d86e9076196f",
+      "commands": [
+        {
+          "name": "CRM_Macro",
+          "type": "UserScript",
+          "id": "7132320b-5652-4185-9956-9cb34ceabd2d",
+          "path": "Scripts/CRM_Macro.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "FinishMeeting",
+      "id": "d431574a-92b3-4beb-b7cf-4d4ac8a8b5b4",
+      "commands": [
+        {
+          "name": "FinishMeeting",
+          "type": "UserScript",
+          "id": "3ad65238-d707-4693-8350-4c6767f77b46",
+          "path": "Scripts/FinishMeeting.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "SetupNewCustomer",
+      "id": "9f13b5d5-aa23-4831-89ea-2a3f176cc6ff",
+      "commands": [
+        {
+          "name": "Templater: Insert Templates/New case template.md",
+          "type": "Obsidian",
+          "id": "6ca8a04d-08f9-44bb-b202-40f132c7a94e",
+          "commandId": "templater-obsidian:Templates/New case template.md"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "84310305-f5de-4d26-8fd6-ce3695ce39f7",
+          "time": 100
+        },
+        {
+          "name": "SetupNewCustomer",
+          "type": "UserScript",
+          "id": "07b72429-d3c3-422d-9fa8-2ad7abd2a8ad",
+          "path": "Scripts/SetupNewCustomer.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "AskForMeetingDate",
+      "id": "a8cf5554-17bb-4b61-87cd-d0d6e9a09a67",
+      "commands": [
+        {
+          "name": "AskForDateForMeeting",
+          "type": "UserScript",
+          "id": "dc6c9243-3496-44af-81d3-752fb6c7831e",
+          "path": "Scripts/AskForDateForMeeting.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line"
+}

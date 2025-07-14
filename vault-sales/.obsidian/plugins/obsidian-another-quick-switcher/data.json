@@ -1,0 +1,11 @@
+{
+  "showDirectory": true,
+  "showExistingFilesOnly": false,
+  "maxNumberOfSuggestions": 50,
+  "normalizeAccentsAndDiacritics": true,
+  "ignoreNormalPathPrefixPatterns": "",
+  "ignoreRecentPathPrefixPatterns": "",
+  "ignoreBackLinkPathPrefixPatterns": "",
+  "ignoreMoveFileToAnotherFolderPrefixPatterns": "",
+  "showLogAboutPerformanceInConsole": false
+}

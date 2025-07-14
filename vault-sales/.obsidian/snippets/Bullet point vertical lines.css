@@ -1,0 +1,60 @@
+.cm-hmd-list-indent .cm-tab,
+ul ul {
+  position: relative;
+}
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before {
+  content: "";
+  border-left: 1px solid rgba(0, 122, 255, 0.25);
+  position: absolute;
+}
+.cm-hmd-list-indent .cm-tab::before {
+  left: 0;
+  top: -5px;
+  bottom: -4px;
+}
+ul ul::before {
+  left: -11px;
+  top: 0;
+  bottom: 0;
+}
+/* .theme-light {
+  --guide-line-fg: rgba(120, 120, 120, 0.2);
+}
+
+.theme-dark {
+  --guide-line-fg: rgba(120, 120, 120, 0.2);
+}
+
+.cm-hmd-list-indent .cm-tab,
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before,
+ol ol::before,
+ul ol::before,
+ol ul::before {
+  content: "";
+  border-left: 1px solid var(--guide-line-fg);
+  position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before {
+  left: 0;
+  top: -0.4rem;
+  bottom: -0.4rem;
+}
+
+ul ul::before,
+ol ol::before,
+ul ol::before,
+ol ul::before {
+  left: -1rem;
+  top: 0;
+  bottom: 0;
+} */

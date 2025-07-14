@@ -147,6 +147,16 @@
               "icon": "links-going-out",
               "title": "Home 的出链列表"
             }
+          },
+          {
+            "id": "e4e5fc3705c37fd9",
+            "type": "leaf",
+            "state": {
+              "type": "netClip_workspace_webview",
+              "state": {},
+              "icon": "globe",
+              "title": "Search - Microsoft Bing"
+            }
           }
         ]
       },
@@ -213,7 +223,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "smart-composer:Open smart composer": false,
       "infio-copilot:打开 Infio Copilot": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -230,19 +239,19 @@
       "obsidian-git:Open Git source control": false,
       "quickadd:QuickAdd": false,
       "canvas:新建白板": false,
-      "periodic-notes:Open today": false,
-      "net-clip:NetClip": false
+      "net-clip:NetClip": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "6b3652b59febae87",
   "lastOpenFiles": [
+    "Diary/2025/2025-06-09.md",
     "Readme.md",
     "_infio_prompts",
     "Diary/2025/2025-06-12.md",
     "Home.md",
     "Home/Home.canvas",
     "Home/待办.md",
-    "Diary/2025/2025-06-09.md",
     "Diary/2025/2025-06-11.md",
     "asdasd.md",
     "obsidian-livesync.md",
