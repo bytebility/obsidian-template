@@ -96,12 +96,17 @@
       "id": "1752664667918",
       "name": "obsidian多端同步",
       "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA4Nzg2NTY2Mw==&action=getalbum&album_id=3885545510249398275#wechat_redirect"
+    },
+    {
+      "id": "1752664984502",
+      "name": "zenfeed",
+      "url": "https://zenfeed.xyz/"
     }
   ],
   "showClock": true,
   "homeTab": {
     "showRecentFiles": false,
-    "showSavedArticles": true,
+    "showSavedArticles": false,
     "backgroundImage": "",
     "backgroundBlur": 0,
     "textColor": "#ffffff",

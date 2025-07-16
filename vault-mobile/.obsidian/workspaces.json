@@ -1,425 +1,52 @@
 {
   "workspaces": {
-    "default": {
-      "main": {
-        "id": "17c8b79e9cd45d18",
-        "type": "split",
-        "children": [
-          {
-            "id": "c1eacaf4e36b896c",
-            "type": "split",
-            "children": [
-              {
-                "id": "63c6766131719758",
-                "type": "split",
-                "dimension": 63.70738636363637,
-                "children": [
-                  {
-                    "id": "ece619a9c511e075",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "c5cb75d852567bc4",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "Diary/2025/2025-06-12.md",
-                            "mode": "source",
-                            "source": false,
-                            "backlinks": true,
-                            "backlinkOpts": {
-                              "collapseAll": false,
-                              "extraContext": false,
-                              "sortOrder": "alphabetical",
-                              "showSearch": false,
-                              "searchQuery": "",
-                              "backlinkCollapsed": false,
-                              "unlinkedCollapsed": true
-                            }
-                          },
-                          "icon": "lucide-file",
-                          "title": "2025-06-12"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "id": "56cac6a99bf43e15",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "baddf653e30fb9a0",
-                        "type": "leaf",
-                        "state": {
-                          "type": "netclip-home-tab-view",
-                          "state": {},
-                          "icon": "home",
-                          "title": "Home"
-                        }
-                      }
-                    ]
-                  }
-                ],
-                "direction": "vertical"
-              },
-              {
-                "id": "5d12e91756f8a99d",
-                "type": "split",
-                "dimension": 36.29261363636363,
-                "children": [
-                  {
-                    "id": "f5fb579e2e4856a0",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "1b149334eee15bdd",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "Diary/2025/Weekly/2025-W22.md",
-                            "mode": "source",
-                            "source": false,
-                            "backlinks": true,
-                            "backlinkOpts": {
-                              "collapseAll": false,
-                              "extraContext": false,
-                              "sortOrder": "alphabetical",
-                              "showSearch": false,
-                              "searchQuery": "",
-                              "backlinkCollapsed": false,
-                              "unlinkedCollapsed": true
-                            }
-                          },
-                          "icon": "lucide-file",
-                          "title": "2025-W22"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "id": "56fb7ae28de513a4",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "1d8a91eddc45eaee",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "Diary/2025/Monthly/2025-06.md",
-                            "mode": "source",
-                            "source": false,
-                            "backlinks": true,
-                            "backlinkOpts": {
-                              "collapseAll": false,
-                              "extraContext": false,
-                              "sortOrder": "alphabetical",
-                              "showSearch": false,
-                              "searchQuery": "",
-                              "backlinkCollapsed": false,
-                              "unlinkedCollapsed": true
-                            }
-                          },
-                          "icon": "lucide-file",
-                          "title": "2025-06"
-                        }
-                      }
-                    ]
-                  }
-                ],
-                "direction": "vertical"
-              }
-            ],
-            "direction": "horizontal"
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "77ed88cd9d4edf18",
-        "type": "split",
-        "children": [
-          {
-            "id": "ebf6e326f9986220",
-            "type": "tabs",
-            "dimension": 58.93118594436311,
-            "children": [
-              {
-                "id": "c38ba062a467429c",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "autoReveal": false
-                  },
-                  "icon": "lucide-folder-closed",
-                  "title": "文件列表"
-                }
-              },
-              {
-                "id": "4f38bdd78f389e08",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  },
-                  "icon": "lucide-search",
-                  "title": "搜索"
-                }
-              },
-              {
-                "id": "93932c8cddfed2d4",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "书签"
-                }
-              }
-            ]
-          },
-          {
-            "id": "d48c3074f5b9c956",
-            "type": "tabs",
-            "dimension": 41.0688140556369,
-            "children": [
-              {
-                "id": "8a2e43e8218455e7",
-                "type": "leaf",
-                "state": {
-                  "type": "recent-files",
-                  "state": {},
-                  "icon": "clock",
-                  "title": "Recent Files"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 367.5
-      },
-      "right": {
-        "id": "a3b4cf71d68fadcd",
-        "type": "split",
-        "children": [
-          {
-            "id": "0dcb57c09f00a844",
-            "type": "tabs",
-            "dimension": 31.82711198428291,
-            "children": [
-              {
-                "id": "6b3652b59febae87",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "关系图谱"
-                }
-              },
-              {
-                "id": "c9b56a4a295aa010",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "Diary/2025/2025-06-12.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "2025-06-12 的反向链接列表"
-                }
-              },
-              {
-                "id": "c1bbf3e1e4b83551",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "Diary/2025/2025-06-12.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-going-out",
-                  "title": "2025-06-12 的出链列表"
-                }
-              }
-            ]
-          },
-          {
-            "id": "d9eb354692e3fb4f",
-            "type": "tabs",
-            "dimension": 68.17288801571709,
-            "children": [
-              {
-                "id": "93cd81f982d06831",
-                "type": "leaf",
-                "state": {
-                  "type": "tasks_timeline_view",
-                  "state": {},
-                  "icon": "calendar-clock",
-                  "title": "Tasks Timeline"
-                }
-              },
-              {
-                "id": "0b5f536206f228b3",
-                "type": "leaf",
-                "state": {
-                  "type": "infio-chat-view",
-                  "state": {},
-                  "icon": "wand-sparkles",
-                  "title": "Infio chat"
-                }
-              },
-              {
-                "id": "4ac5bf1a825df673",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "Home/Home.canvas",
-                    "followCursor": false,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-list",
-                  "title": "Home 的大纲"
-                }
-              },
-              {
-                "id": "c9578ed628808135",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "useHierarchy": true,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-tags",
-                  "title": "标签"
-                }
-              },
-              {
-                "id": "d3d2068404b604fe",
-                "type": "leaf",
-                "state": {
-                  "type": "netClip_workspace_webview",
-                  "state": {},
-                  "icon": "globe",
-                  "title": "今日新闻 - Search"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 493.5
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "infio-copilot:打开 Infio Copilot": false,
-          "switcher:打开快速切换": false,
-          "graph:查看关系图谱": false,
-          "daily-notes:打开/创建今天的日记": false,
-          "templates:插入模板": false,
-          "command-palette:打开命令面板": false,
-          "markdown-importer:打开 Markdown 格式转换器": false,
-          "random-note:开始漫游笔记": false,
-          "workspaces:管理工作区布局": false,
-          "templater-obsidian:Templater": false,
-          "outliner-md:New outliner file": false,
-          "homepage:Open homepage": false,
-          "omnisearch:Omnisearch": false,
-          "obsidian-git:Open Git source control": false,
-          "quickadd:QuickAdd": false,
-          "canvas:新建白板": false,
-          "net-clip:NetClip": false,
-          "periodic-notes:Open today": false,
-          "workspaces-plus:Manage workspaces": false
-        }
-      },
-      "active": "c5cb75d852567bc4",
-      "mtime": "2025-07-16T19:19:38+08:00",
-      "workspaces-plus:settings-v1": {
-        "mode": null,
-        "explorerFoldState": [
-          "04Archive",
-          "Diary",
-          "Diary/2025",
-          "Diary/2025/Monthly",
-          "Diary/2025/Weekly",
-          "NetClip",
-          "NetClip/Articles",
-          "NetClip/Research",
-          "NetClip/Tech"
-        ]
-      }
-    },
     "主页": {
       "main": {
         "id": "17c8b79e9cd45d18",
         "type": "split",
         "children": [
           {
-            "id": "c1eacaf4e36b896c",
+            "id": "3e38a3d9edf5268d",
             "type": "split",
             "children": [
               {
-                "id": "63c6766131719758",
-                "type": "split",
-                "dimension": 63.70738636363637,
+                "id": "93f35edf851743e0",
+                "type": "tabs",
+                "dimension": 65.25529265255294,
                 "children": [
                   {
-                    "id": "ece619a9c511e075",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "c5cb75d852567bc4",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "Diary/2025/2025-06-12.md",
-                            "mode": "source",
-                            "source": false,
-                            "backlinks": true,
-                            "backlinkOpts": {
-                              "collapseAll": false,
-                              "extraContext": false,
-                              "sortOrder": "alphabetical",
-                              "showSearch": false,
-                              "searchQuery": "",
-                              "backlinkCollapsed": false,
-                              "unlinkedCollapsed": true
-                            }
-                          },
-                          "icon": "lucide-file",
-                          "title": "2025-06-12"
+                    "id": "c5cb75d852567bc4",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Diary/2025/2025-06-12.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
                         }
-                      }
-                    ]
-                  },
+                      },
+                      "icon": "lucide-file",
+                      "title": "2025-06-12"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "78857c6ae5117adf",
+                "type": "split",
+                "dimension": 34.744707347447076,
+                "children": [
                   {
-                    "id": "56cac6a99bf43e15",
+                    "id": "8f375c63def0d216",
                     "type": "tabs",
                     "children": [
                       {
@@ -433,47 +60,9 @@
                         }
                       }
                     ]
-                  }
-                ],
-                "direction": "vertical"
-              },
-              {
-                "id": "5d12e91756f8a99d",
-                "type": "split",
-                "dimension": 36.29261363636363,
-                "children": [
-                  {
-                    "id": "f5fb579e2e4856a0",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "1b149334eee15bdd",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "Diary/2025/Weekly/2025-W22.md",
-                            "mode": "source",
-                            "source": false,
-                            "backlinks": true,
-                            "backlinkOpts": {
-                              "collapseAll": false,
-                              "extraContext": false,
-                              "sortOrder": "alphabetical",
-                              "showSearch": false,
-                              "searchQuery": "",
-                              "backlinkCollapsed": false,
-                              "unlinkedCollapsed": true
-                            }
-                          },
-                          "icon": "lucide-file",
-                          "title": "2025-W22"
-                        }
-                      }
-                    ]
                   },
                   {
-                    "id": "56fb7ae28de513a4",
+                    "id": "8ffd1a79fcba4736",
                     "type": "tabs",
                     "children": [
                       {
@@ -499,14 +88,39 @@
                           "icon": "lucide-file",
                           "title": "2025-06"
                         }
+                      },
+                      {
+                        "id": "1b149334eee15bdd",
+                        "type": "leaf",
+                        "state": {
+                          "type": "markdown",
+                          "state": {
+                            "file": "Diary/2025/Weekly/2025-W22.md",
+                            "mode": "source",
+                            "source": false,
+                            "backlinks": true,
+                            "backlinkOpts": {
+                              "collapseAll": false,
+                              "extraContext": false,
+                              "sortOrder": "alphabetical",
+                              "showSearch": false,
+                              "searchQuery": "",
+                              "backlinkCollapsed": false,
+                              "unlinkedCollapsed": true
+                            }
+                          },
+                          "icon": "lucide-file",
+                          "title": "2025-W22"
+                        }
                       }
-                    ]
+                    ],
+                    "currentTab": 1
                   }
                 ],
-                "direction": "vertical"
+                "direction": "horizontal"
               }
             ],
-            "direction": "horizontal"
+            "direction": "vertical"
           }
         ],
         "direction": "vertical"
@@ -518,7 +132,7 @@
           {
             "id": "ebf6e326f9986220",
             "type": "tabs",
-            "dimension": 58.93118594436311,
+            "dimension": 58.9311859443631,
             "children": [
               {
                 "id": "c38ba062a467429c",
@@ -732,7 +346,7 @@
         }
       },
       "active": "c5cb75d852567bc4",
-      "mtime": "2025-07-16T19:19:47+08:00",
+      "mtime": "2025-07-16T19:25:14+08:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
           "04Archive",

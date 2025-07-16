@@ -4,46 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "c1eacaf4e36b896c",
+        "id": "3e38a3d9edf5268d",
         "type": "split",
         "children": [
           {
-            "id": "63c6766131719758",
-            "type": "split",
-            "dimension": 63.70738636363637,
+            "id": "93f35edf851743e0",
+            "type": "tabs",
+            "dimension": 65.25529265255294,
             "children": [
               {
-                "id": "ece619a9c511e075",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "c5cb75d852567bc4",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Diary/2025/2025-06-12.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "2025-06-12"
+                "id": "c5cb75d852567bc4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Diary/2025/2025-06-12.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
                     }
-                  }
-                ]
-              },
+                  },
+                  "icon": "lucide-file",
+                  "title": "2025-06-12"
+                }
+              }
+            ]
+          },
+          {
+            "id": "78857c6ae5117adf",
+            "type": "split",
+            "dimension": 34.744707347447076,
+            "children": [
               {
-                "id": "56cac6a99bf43e15",
+                "id": "8f375c63def0d216",
                 "type": "tabs",
                 "children": [
                   {
@@ -57,47 +58,9 @@
                     }
                   }
                 ]
-              }
-            ],
-            "direction": "vertical"
-          },
-          {
-            "id": "5d12e91756f8a99d",
-            "type": "split",
-            "dimension": 36.29261363636363,
-            "children": [
-              {
-                "id": "f5fb579e2e4856a0",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "1b149334eee15bdd",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Diary/2025/Weekly/2025-W22.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "2025-W22"
-                    }
-                  }
-                ]
               },
               {
-                "id": "56fb7ae28de513a4",
+                "id": "8ffd1a79fcba4736",
                 "type": "tabs",
                 "children": [
                   {
@@ -123,14 +86,39 @@
                       "icon": "lucide-file",
                       "title": "2025-06"
                     }
+                  },
+                  {
+                    "id": "1b149334eee15bdd",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Diary/2025/Weekly/2025-W22.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "2025-W22"
+                    }
                   }
-                ]
+                ],
+                "currentTab": 1
               }
             ],
-            "direction": "vertical"
+            "direction": "horizontal"
           }
         ],
-        "direction": "horizontal"
+        "direction": "vertical"
       }
     ],
     "direction": "vertical"
@@ -142,7 +130,7 @@
       {
         "id": "ebf6e326f9986220",
         "type": "tabs",
-        "dimension": 58.93118594436311,
+        "dimension": 58.9311859443631,
         "children": [
           {
             "id": "c38ba062a467429c",
@@ -358,8 +346,9 @@
   "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
     "Diary/2025/Weekly/2025-W22.md",
-    "Diary/2025/Monthly/2025-06.md",
     "Diary/2025/2025-06-12.md",
+    "Diary/2025/Monthly/2025-06.md",
+    "NetClip/Article from mp.weixin.qq.com.md",
     "Diary/2025/Weekly/2025-W24.md",
     "Diary/2025/2025-07-16.md",
     "Diary/2025/Weekly/2025-W20.md",
@@ -394,7 +383,6 @@
     "01Project/24格尔木线路1900.md",
     "00 Templater/待办事项模板.md",
     "00 Templater/会议模板1.md",
-    "00 Templater/会议模板.md",
     "files/xtool-logo.png",
     "files/home.png",
     "Home/demo.canvas"
