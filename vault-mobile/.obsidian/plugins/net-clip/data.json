@@ -78,38 +78,29 @@
   "replaceTabHome": false,
   "shortcuts": [
     {
-      "id": "1749689781112",
-      "name": "",
-      "url": "https://github.com/Elhary/Obsidian-NetClip",
-      "favicon": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
-    },
-    {
-      "id": "1749689781112",
-      "name": "",
-      "url": "https://youtube.com",
-      "favicon": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128"
-    },
-    {
-      "id": "1749689781112",
-      "name": "",
-      "url": "https://www.reddit.com/r/ObsidianMD/",
-      "favicon": "https://www.google.com/s2/favicons?domain=reddit.com&sz=128"
-    },
-    {
-      "id": "1749689781112",
-      "name": "",
-      "url": "https://forum.obsidian.md/",
-      "favicon": "https://www.google.com/s2/favicons?domain=obsidian.md&sz=128"
-    },
-    {
       "id": "1749689826359",
       "name": "tools",
       "url": "https://it-tools.tech/"
+    },
+    {
+      "id": "1752664607644",
+      "name": "个人知识库",
+      "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA4Nzg2NTY2Mw==&action=getalbum&album_id=3880988817024614400"
+    },
+    {
+      "id": "1752664634463",
+      "name": "自媒体工具",
+      "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA4Nzg2NTY2Mw==&action=getalbum&album_id=3945476079997124611"
+    },
+    {
+      "id": "1752664667918",
+      "name": "obsidian多端同步",
+      "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA4Nzg2NTY2Mw==&action=getalbum&album_id=3885545510249398275#wechat_redirect"
     }
   ],
   "showClock": true,
   "homeTab": {
-    "showRecentFiles": true,
+    "showRecentFiles": false,
     "showSavedArticles": true,
     "backgroundImage": "",
     "backgroundBlur": 0,

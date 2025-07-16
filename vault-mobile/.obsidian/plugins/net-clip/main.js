@@ -3570,6 +3570,17 @@ var _WebViewComponent = class _WebViewComponent {
   createContainer() {
     const containerEl = document.createElement("div");
     containerEl.classList.add("netClip_webview_container");
+    if (import_obsidian5.Platform.isMobileApp) {
+      const msg = containerEl.createDiv("netclip_mobile_message");
+      const icon = document.createElement("span");
+      (0, import_obsidian5.setIcon)(icon, "triangle-alert");
+      msg.appendChild(icon);
+      msg.appendChild(document.createElement("br"));
+      const line1 = document.createElement("span");
+      line1.appendChild(document.createTextNode("Web browsing is not supported inside Obsidian Mobile."));
+      msg.appendChild(line1);
+      return containerEl;
+    }
     const controlsEl = containerEl.createDiv("netClip_web_controls");
     this.setupNavigationBtns(controlsEl);
     this.setupSearchInput(controlsEl);
@@ -3691,6 +3702,13 @@ var _WebViewComponent = class _WebViewComponent {
     this.refreshBtn = leftContainer.createEl("button", { cls: "netClip_refresh_btn netClip_btn" });
     (0, import_obsidian5.setIcon)(this.refreshBtn, "rotate-ccw");
     this.refreshBtn.onclick = () => this.refresh();
+    if (import_obsidian5.Platform.isMobileApp) {
+      this.backBtn.disabled = true;
+      this.forwardBtn.disabled = true;
+      this.refreshBtn.disabled = false;
+      (0, import_obsidian5.setTooltip)(this.backBtn, "Back not supported on mobile");
+      (0, import_obsidian5.setTooltip)(this.forwardBtn, "Forward not supported on mobile");
+    }
   }
   createIframe() {
     var _a, _b;
@@ -3699,7 +3717,7 @@ var _WebViewComponent = class _WebViewComponent {
     iframe.setAttribute("credentialless", "true");
     iframe.setAttribute("crossorigin", "anonymous");
     iframe.setAttribute("src", this.url);
-    let sandbox = "allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-top-navigation-by-user-activation";
+    let sandbox = "allow-forms allow-modals allow-pops allow-presentation allow-scripts allow-top-navigation-by-user-activation";
     if (!((_b = (_a = this.plugin) == null ? void 0 : _a.settings) == null ? void 0 : _b.privateMode)) {
       sandbox += " allow-same-origin";
     }
@@ -3719,6 +3737,20 @@ var _WebViewComponent = class _WebViewComponent {
       if (title && this.titleChangeCallback) {
         this.titleChangeCallback(title);
       }
+    });
+    iframe.addEventListener("error", () => {
+      if (iframe.parentElement) iframe.parentElement.removeChild(iframe);
+      const errorDiv = document.createElement("div");
+      errorDiv.className = "netClip_webview_error";
+      const iconDiv = document.createElement("div");
+      const msgDiv = document.createElement("div");
+      msgDiv.appendChild(document.createTextNode("Web page could not be loaded."));
+      msgDiv.appendChild(document.createElement("br"));
+      msgDiv.appendChild(document.createTextNode("Some sites block embedding in Obsidian Mobile."));
+      errorDiv.appendChild(iconDiv);
+      errorDiv.appendChild(msgDiv);
+      const frameContainer = document.querySelector(".netClip_frame-container");
+      if (frameContainer) frameContainer.appendChild(errorDiv);
     });
     return iframe;
   }
@@ -3859,6 +3891,8 @@ var _WebViewComponent = class _WebViewComponent {
         if (this.currentHistoryIndex > 0) {
           this.currentHistoryIndex--;
           this.frame.src = this.navigationHistory[this.currentHistoryIndex];
+        } else if (import_obsidian5.Platform.isMobileApp) {
+          new import_obsidian5.Notice("Back navigation is not supported on mobile.");
         }
       } else {
         const webview = this.frame;
@@ -3876,6 +3910,8 @@ var _WebViewComponent = class _WebViewComponent {
         if (this.currentHistoryIndex < this.navigationHistory.length - 1) {
           this.currentHistoryIndex++;
           this.frame.src = this.navigationHistory[this.currentHistoryIndex];
+        } else if (import_obsidian5.Platform.isMobileApp) {
+          new import_obsidian5.Notice("Forward navigation is not supported on mobile.");
         }
       } else {
         const webview = this.frame;
@@ -3903,6 +3939,9 @@ var _WebViewComponent = class _WebViewComponent {
     this.windowOpenCallback = callback;
   }
   setupAdBlocking(webview) {
+    if (import_obsidian5.Platform.isMobileApp) {
+      return;
+    }
     this.adBlocker.initializeFilters().then(() => {
       this.adBlocker.applyFilters(webview);
       webview.addEventListener("dom-ready", () => {
@@ -3912,6 +3951,9 @@ var _WebViewComponent = class _WebViewComponent {
     });
   }
   setupPrivateMode(webview) {
+    if (import_obsidian5.Platform.isMobileApp) {
+      return;
+    }
     webview.executeJavaScript(`
             window.sessionStorage.clear();
             window.localStorage.clear();
@@ -6955,8 +6997,17 @@ var NetClipSettingTab = class extends import_obsidian14.PluginSettingTab {
     this.addTabHeader();
   }
   webViewSettings(containerEl) {
+    var _a;
     new import_obsidian14.Setting(containerEl).setName("Web view").setHeading();
     this.syncCategoriesFolders();
+    if (((_a = window.Platform) == null ? void 0 : _a.isMobileApp) || typeof window.cordova !== "undefined") {
+      const warning = containerEl.createDiv("netclip-info-box");
+      const infoContent = warning.createDiv("netclip-info-content");
+      const infoIcon = infoContent.createSpan("netclip-info-icon");
+      (0, import_obsidian14.setIcon)(infoIcon, "alert-triangle");
+      const textSpan = infoContent.createSpan();
+      textSpan.setText("Web view is not supported on mobile devices. You can still use the clipper and other features.");
+    }
     new import_obsidian14.Setting(containerEl).setName("Search engine").setDesc("Choose your preferred search engine for the web view").addDropdown(
       (dropdown) => dropdown.addOption("google", "Google").addOption("youtube", "YouTube").addOption("bing", "Bing").addOption("perplexity", "Perplexity").addOption("duckduckgo", "Duckduckgo").addOption("genspark", "Genspark").addOption("kagi", "Kagi").setValue(this.plugin.settings.searchEngine).onChange(async (value) => {
         this.plugin.settings.searchEngine = value;
@@ -8010,7 +8061,11 @@ var NetClipPlugin = class extends import_obsidian18.Plugin {
           });
           menu.addItem((item) => {
             item.setTitle("Open in Modal WebView").setIcon("picture-in-picture-2").onClick(() => {
-              new WebViewModal(this.app, url, this).open();
+              if (url) {
+                new WebViewModal(this.app, url, this).open();
+              } else {
+                new import_obsidian18.Notice("No valid URL found to open in WebView.");
+              }
             });
           });
         }

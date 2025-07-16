@@ -2,7 +2,6 @@
   "calendar",
   "surfing",
   "sample-plugin",
-  "advanced-canvas",
   "completed-tasks",
   "dataview",
   "homepage",
@@ -26,9 +25,10 @@
   "obsidian-checklist-reset",
   "obsidian-chartsview-plugin",
   "ai-providers",
-  "recent-files-obsidian",
   "remember-cursor-position",
   "obsidian-show-file-path",
   "net-clip",
-  "infio-copilot"
+  "infio-copilot",
+  "recent-files-obsidian",
+  "workspaces-plus"
 ]

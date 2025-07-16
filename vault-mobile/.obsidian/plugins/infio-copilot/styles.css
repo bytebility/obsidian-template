@@ -76,6 +76,28 @@
   font-size: var(--font-ui-medium);
   font-weight: var(--font-medium);
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--size-2-2);
+  flex-wrap: nowrap;
+}
+
+.infio-chat-current-workspace {
+  display: inline-flex;
+  align-items: center;
+  margin-left: var(--size-4-2);
+  padding: var(--size-2-1) var(--size-4-1);
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-smaller);
+  font-weight: var(--font-normal);
+  color: var(--text-accent);
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.2s ease;
 }
 
 .infio-chat-header-buttons {
@@ -204,6 +226,9 @@
     font-size: var(--code-size);
     background-color: var(--code-background);
     vertical-align: baseline;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
   }
 
   table {
@@ -722,6 +747,9 @@ input[type='text'].infio-chat-list-dropdown-item-title-input {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: var(--size-2-1);
 }
 
 .infio-chat-code-block-header-icon {
@@ -769,6 +797,10 @@ input[type='text'].infio-chat-list-dropdown-item-title-input {
   font-size: var(--font-ui-smaller);
 }
 
+.infio-dataview-query-button {
+  color: #008000;
+}
+
 .infio-chat-code-block-content {
   margin: 0;
 }
@@ -785,6 +817,24 @@ input[type='text'].infio-chat-list-dropdown-item-title-input {
 }
 
 .infio-chat-lexical-content-editable-root .mention {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  padding: var(--size-2-1) calc(var(--size-2-1));
+  border-radius: var(--radius-s);
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  padding: 0 calc(var(--size-2-1));
+  border-radius: var(--radius-s);
+  word-break: break-all;
+}
+
+.infio-search-lexical-content-editable-root {
+  min-height: 36px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.infio-search-lexical-content-editable-root .mention {
   background-color: var(--tag-background);
   color: var(--tag-color);
   padding: var(--size-2-1) calc(var(--size-2-1));
@@ -2036,6 +2086,36 @@ button.infio-chat-input-model-select {
   text-decoration: underline;
 }
 
+/*
+ * Manage Files Block Styles
+ */
+.manage-files-operation {
+  margin-bottom: var(--size-2-1);
+}
+
+.operation-item {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2-1);
+  padding: var(--size-2-1) var(--size-4-1);
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  transition: all 0.2s ease;
+}
+
+.operation-item:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.operation-description {
+  flex: 1;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
 .infio-chat-code-block-status-button {
   color: var(--color-green); /* 替换原来的 #008000 */
   background: none;
@@ -2045,6 +2125,91 @@ button.infio-chat-input-model-select {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+/*
+ * Mermaid Diagram Styles
+ * - Mermaid 图表渲染样式
+ */
+
+.infio-mermaid-loading {
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  border-radius: var(--radius-s);
+  background-color: var(--background-secondary);
+}
+
+.infio-mermaid-error {
+  padding: 1rem;
+  color: var(--text-error);
+  font-size: var(--font-ui-small);
+  border-radius: var(--radius-s);
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-error);
+}
+
+.infio-mermaid-error-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.infio-mermaid-error-message {
+  font-family: var(--font-monospace);
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
+}
+
+.infio-mermaid-error-details {
+  margin-top: 0.5rem;
+}
+
+.infio-mermaid-error-details summary {
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 0.8em;
+}
+
+.infio-mermaid-error-details pre {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--background-primary);
+  border-radius: var(--radius-s);
+  font-size: 0.8em;
+  overflow-x: auto;
+}
+
+.infio-mermaid-container {
+  text-align: center;
+  padding: 1rem;
+  border-radius: var(--radius-s);
+  background-color: var(--background-secondary);
+  overflow: auto;
+}
+
+/* Mermaid SVG 特定样式 */
+.infio-mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 深色模式下的 Mermaid 样式调整 */
+.theme-dark .infio-mermaid-container .node rect,
+.theme-dark .infio-mermaid-container .node circle,
+.theme-dark .infio-mermaid-container .node ellipse,
+.theme-dark .infio-mermaid-container .node polygon {
+  fill: var(--background-primary);
+  stroke: var(--background-modifier-border);
+}
+
+.theme-dark .infio-mermaid-container .edgePath .path {
+  stroke: var(--text-muted);
+}
+
+.theme-dark .infio-mermaid-container .edgeLabel {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 /*
