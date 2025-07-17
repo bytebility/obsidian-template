@@ -9,7 +9,7 @@ const GDD_CONFIG = {
   resetSuccessNotice: "✨ GDD周报重置完成", // 重置成功提示
   errorNotice: "文件名需符合 YYYY-WXX 格式", // 错误提示
   gddTags: {                     // 标签配置
-    '#observe': { emoji: '👍', title: 'Observe' },
+    '#observe': { emoji: '👀', title: 'Observe' },
     '#good': { emoji: '👍', title: 'Good' },
     '#difficult': { emoji: '💪', title: 'Difficult' },
     '#different': { emoji: '🌟', title: 'Different' }
@@ -237,7 +237,8 @@ async function generateTasks(app, dv, activeFile) {
   let markdownContent = "";
   for (const tag in tasksByTag) {
     let taskSize=tasksByTag[tag].length
-    markdownContent += `${TASK_CONFIG.subheadingLevel} ${tag} · ${taskSize}项\n\n`;
+    let title= tag.split("#")[1]
+    markdownContent += `${TASK_CONFIG.subheadingLevel} ${title} · ${taskSize}项\n\n`;
     
     for (const task of tasksByTag[tag]) {
       const status = task.completed ? "x" : " ";
@@ -250,7 +251,7 @@ async function generateTasks(app, dv, activeFile) {
       // 移除多余空格
       cleanText = cleanText.trim();
       
-      markdownContent += `* [${status}] ${cleanText} (${task.link})\n`;
+      markdownContent += `* ${tag} ${cleanText}\n`;
     }
     markdownContent += "\n";
   }

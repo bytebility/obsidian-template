@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Diary/2025/2025-06-12.md",
+                    "file": "Diary/2025/Monthly/2025-07.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,10 +33,35 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-06-12"
+                  "title": "2025-07"
+                }
+              },
+              {
+                "id": "b89f477442ed7234",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Readme.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Readme"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "78857c6ae5117adf",
@@ -246,8 +271,19 @@
               "icon": "links-going-out",
               "title": "2025-06-12 的出链列表"
             }
+          },
+          {
+            "id": "d31f1cd629e25503",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "d9eb354692e3fb4f",
@@ -332,9 +368,6 @@
       "random-note:开始漫游笔记": false,
       "workspaces:管理工作区布局": false,
       "templater-obsidian:Templater": false,
-      "outliner-md:New outliner file": false,
-      "homepage:Open homepage": false,
-      "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
       "quickadd:QuickAdd": false,
       "canvas:新建白板": false,
@@ -343,17 +376,27 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "c5cb75d852567bc4",
+  "active": "b89f477442ed7234",
   "lastOpenFiles": [
     "Diary/2025/2025-07-17.md",
+    "Diary/2025/Weekly/2025-W29.md",
+    "Diary/2025/Monthly/2025-07.md",
+    "Diary/2025/2025-07-16.md",
+    "Diary/2025/Weekly/2025-W28.md",
+    "Diary/2025/Monthly/2025-05.md",
+    "Diary/2025/Monthly/2025-06.md",
+    "03Resource/工具/obsidian/template/weekly.md",
+    "03Resource/工具/obsidian/template/monthly.md",
+    "02Area/02Area.md",
+    "03Resource/工具/obsidian/scripts_quickadd/weekly_memos.js",
+    "03Resource/工具/obsidian/scripts_quickadd/monthly_memos.js",
+    "03Resource/工具/obsidian/scripts_quickadd/import_lumma_diary.js",
+    "03Resource/工具/obsidian/scripts_quickadd",
+    "02Area/思维模型/思维模型.md",
     "assets/Readme/home.png",
     "Diary/2025/Weekly/2025-W22.md",
-    "Diary/2025/2025-06-12.md",
-    "Diary/2025/Monthly/2025-06.md",
     "02Area/奕宸管理/奕宸管理.md",
     "NetClip/Article from mp.weixin.qq.com.md",
-    "Diary/2025/Weekly/2025-W24.md",
-    "Diary/2025/2025-07-16.md",
     "Diary/2025/Weekly/2025-W20.md",
     "Diary/Diary.md",
     "Home/Home.canvas",
@@ -372,17 +415,7 @@
     "01- 学习资料",
     "assets/Readme/xtool-logo.png",
     "03Resource/工具/obsidian/template/微信公众号封面设计-1.html",
-    "03Resource/工具/obsidian/template/tasks.md",
-    "03Resource/工具/obsidian/template/habitat.md",
-    "03Resource/工具/obsidian/template/SearchEngineBook.md",
-    "02 Company/ZC/项目/众华/会议/Untitled.md",
     "02 Company/ZC/项目/众华/会议",
-    "02 Company/ZC/项目/众华",
-    "02 Company/ZC/项目",
-    "02 Company/ZC",
-    "02 Company",
-    "01Project/Untitled.md",
-    "01Project/24格尔木线路1900.md",
     "files/xtool-logo.png",
     "files/home.png",
     "Home/demo.canvas"

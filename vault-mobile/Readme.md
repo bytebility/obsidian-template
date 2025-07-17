@@ -3,7 +3,7 @@ title: Readme
 aliases: [轻松做好周总结：PDCA 循环 + Obsidian 自动化工作流]
 tags: []
 created: 2025-03-23T09:10:01
-updated: 2025-06-20T12:04:08
+updated: 2025-07-17T20:40:48
 draft: true
 ---
 
@@ -47,7 +47,7 @@ draft: true
 * 周期笔记：[periodic-notes](obsidian://show-plugin?id=periodic-notes)，按周/季/月/年，按模板总结
 
 ### 知识同步
-* 实时同步：[[obsidian-livesync]]，基于 couchdb 服务
+* 实时同步：采用 webdav，可选择 nutstore sync 或者 remotely save
 * 实时同步：[[Resilio]]
 * 数据备份：[[obsidian-git]]，基于 git 服务
 	* 自建 git 服务端： gogos
@@ -58,7 +58,6 @@ draft: true
 
 ### 编辑增强
 * 自动格式化：[linter](obsidian://show-plugin?id=obsidian-linter)
-* 嵌入笔记编辑：[outliner.md](https://outliner.md/)
 * 笔记模板：[[obsidian-templater]]
 * 图表脚本：[mermaid](obsidian://show-plugin?id=mehrmaid)，封装了主流图表库 [mermaid](https://mermaid.js.org/)，支持 20 多种图表类型，特别适合让大模型自动生成
 * 图表视图: [obsidian-chartsview-plugin](obsidian://show-plugin?id=obsidian-chartsview-plugin)，可交互式制作图表，提供各类图表模板
@@ -82,9 +81,6 @@ draft: true
 ### AI 增强
 * AI 总结/提示词管理：[quickadd](obsidian://show-plugin?id=quickadd)，启用 AI Assistant
 * AI 对话/RAG 问答：[infio-copilot](obsidian://show-plugin?id=infio-copilot)，支持本地笔记的 rag 搜索,MCP 集成
-* AI 对话：[chatgpt-md](obsidian://show-plugin?id=chatgpt-md)，覆盖广，支持 ollama,chatgpt,openRouter，基本能使用所有大模型
-* 本地大模型服务：[ai-providers](obsidian://show-plugin?id=ai-providers),可对接本地的 LmStudio
-* 本地 AI 助手：[local-gpt](obsidian://show-plugin?id=local-gpt)，支持提示词管理，右键
 
 ### 视图管理
 
@@ -103,8 +99,6 @@ draft: true
 #### 笔记视图
 * 脑图：[obsidian-mindmap-nextgen](https://github.com/james-tindal/obsidian-mindmap-nextgen)，按 markdown 大纲展示为树形脑图
 * 数据视图：[[obsidian-dataview]]，类似 mysql
-* PPT 演示文稿：[marp](obsidian://show-plugin?id=marp-slides)
-* 卡片视图：[notes-explorer](obsidian://show-plugin?id=notes-explorer)，前身是 CardsView
 * 完全魔改的：make.md，改得和 notion 很像，太花了，我用不习惯
 
 ### 附件管理

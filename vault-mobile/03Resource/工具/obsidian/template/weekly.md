@@ -1,10 +1,4 @@
----
-draft: true
-title: weekly
-tags: []
-created: 2025-03-09T18:01:49
-updated: 2025-04-26T10:36:01
----
+# weekly
 <%*
 // 生成标题和日期
 const curFile = tp.file.title;
@@ -50,7 +44,8 @@ btn.addEventListener("click", async () => {
 2. kr2
 
 ## 周复盘
-> * KR达成情况
+
+> * KR 达成情况
 > * 未达成的卡点
 
 ### 工作成果
