@@ -10,7 +10,7 @@
           {
             "id": "93f35edf851743e0",
             "type": "tabs",
-            "dimension": 65.25529265255294,
+            "dimension": 65.25529265255292,
             "children": [
               {
                 "id": "c5cb75d852567bc4",
@@ -41,7 +41,7 @@
           {
             "id": "78857c6ae5117adf",
             "type": "split",
-            "dimension": 34.744707347447076,
+            "dimension": 34.74470734744707,
             "children": [
               {
                 "id": "8f375c63def0d216",
@@ -130,7 +130,7 @@
       {
         "id": "ebf6e326f9986220",
         "type": "tabs",
-        "dimension": 58.9311859443631,
+        "dimension": 58.931185944363094,
         "children": [
           {
             "id": "c38ba062a467429c",
@@ -177,7 +177,7 @@
       {
         "id": "d48c3074f5b9c956",
         "type": "tabs",
-        "dimension": 41.0688140556369,
+        "dimension": 41.068814055636906,
         "children": [
           {
             "id": "8a2e43e8218455e7",
@@ -345,9 +345,12 @@
   },
   "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
+    "Diary/2025/2025-07-17.md",
+    "assets/Readme/home.png",
     "Diary/2025/Weekly/2025-W22.md",
     "Diary/2025/2025-06-12.md",
     "Diary/2025/Monthly/2025-06.md",
+    "02Area/奕宸管理/奕宸管理.md",
     "NetClip/Article from mp.weixin.qq.com.md",
     "Diary/2025/Weekly/2025-W24.md",
     "Diary/2025/2025-07-16.md",
@@ -372,7 +375,6 @@
     "03Resource/工具/obsidian/template/tasks.md",
     "03Resource/工具/obsidian/template/habitat.md",
     "03Resource/工具/obsidian/template/SearchEngineBook.md",
-    "02Area/奕宸管理/奕宸管理.md",
     "02 Company/ZC/项目/众华/会议/Untitled.md",
     "02 Company/ZC/项目/众华/会议",
     "02 Company/ZC/项目/众华",
@@ -381,8 +383,6 @@
     "02 Company",
     "01Project/Untitled.md",
     "01Project/24格尔木线路1900.md",
-    "00 Templater/待办事项模板.md",
-    "00 Templater/会议模板1.md",
     "files/xtool-logo.png",
     "files/home.png",
     "Home/demo.canvas"
