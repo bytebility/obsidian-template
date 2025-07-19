@@ -1,15 +1,6 @@
----
-draft: true
-title: diary
-aliases: [memos]
-tags: []
-created: 2023-06-28T11:10:00
-updated: 2025-03-19T21:04:15
----
 
-# 2025-04-28
+# <% tp.date.now("yyyy-MM-DD") %>
 
-<div style=" width: 100%; height:40;overflow: hidden; "><iframe src="https://widget.pkmer.cn/free/miniTianqi?user=8cbd57c4-d296-4c80-81bb-f1bd2faab9f4&select-theme=ta&theme=%E7%BB%8F%E5%85%B8&input-text=%E6%9D%AD%E5%B7%9E&theme-color=%23747474" allow="fullscreen" style=" height: 100%; width: 100%;"></iframe></div>
 ## summary
 
 > AI 生成总结
