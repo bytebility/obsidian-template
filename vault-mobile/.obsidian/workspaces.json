@@ -20,7 +20,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "03Resource/工具/obsidian/template/diary.md",
+                        "file": "Diary/2025/2025-07-19.md",
                         "mode": "source",
                         "source": false,
                         "backlinks": true,
@@ -35,7 +35,7 @@
                         }
                       },
                       "icon": "lucide-file",
-                      "title": "diary"
+                      "title": "2025-07-19"
                     }
                   }
                 ]
@@ -240,12 +240,12 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Diary/2025/2025-06-12.md",
+                    "file": "Diary/2025/2025-07-19.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-going-out",
-                  "title": "2025-06-12 的出链列表"
+                  "title": "2025-07-19 的出链列表"
                 }
               }
             ]
@@ -271,8 +271,8 @@
                 "state": {
                   "type": "infio-chat-view",
                   "state": {},
-                  "icon": "wand-sparkles",
-                  "title": "Infio chat"
+                  "icon": "lucide-file",
+                  "title": "插件不再活动"
                 }
               },
               {
@@ -311,8 +311,8 @@
                 "state": {
                   "type": "netClip_workspace_webview",
                   "state": {},
-                  "icon": "globe",
-                  "title": "今日新闻 - Search"
+                  "icon": "lucide-file",
+                  "title": "插件不再活动"
                 }
               }
             ]
@@ -323,7 +323,6 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "infio-copilot:打开 Infio Copilot": false,
           "switcher:打开快速切换": false,
           "graph:查看关系图谱": false,
           "daily-notes:打开/创建今天的日记": false,
@@ -332,28 +331,24 @@
           "markdown-importer:打开 Markdown 格式转换器": false,
           "random-note:开始漫游笔记": false,
           "workspaces:管理工作区布局": false,
+          "canvas:新建白板": false,
+          "periodic-notes:Open today": false,
+          "quickadd:QuickAdd": false,
           "templater-obsidian:Templater": false,
           "obsidian-git:Open Git source control": false,
-          "quickadd:QuickAdd": false,
-          "canvas:新建白板": false,
           "net-clip:NetClip": false,
-          "periodic-notes:Open today": false,
+          "infio-copilot:打开 Infio Copilot": false,
           "workspaces-plus:Manage workspaces": false
         }
       },
       "active": "c5cb75d852567bc4",
-      "mtime": "2025-07-19T11:45:34+08:00",
+      "mtime": "2025-07-19T21:56:59+08:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
-          "04Archive",
-          "Diary",
-          "Diary/2025",
-          "Diary/2025/Monthly",
-          "Diary/2025/Weekly",
-          "NetClip",
-          "NetClip/Articles",
-          "NetClip/Research",
-          "NetClip/Tech"
+          "03Resource",
+          "03Resource/工具",
+          "03Resource/工具/obsidian",
+          "03Resource/工具/obsidian/template"
         ]
       }
     }
