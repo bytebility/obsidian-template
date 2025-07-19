@@ -10,7 +10,7 @@
           {
             "id": "93f35edf851743e0",
             "type": "tabs",
-            "dimension": 65.25529265255292,
+            "dimension": 61.13989637305699,
             "children": [
               {
                 "id": "c5cb75d852567bc4",
@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Diary/2025/Monthly/2025-07.md",
+                    "file": "03Resource/工具/obsidian/template/diary.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,40 +33,15 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-07"
-                }
-              },
-              {
-                "id": "b89f477442ed7234",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Readme.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Readme"
+                  "title": "diary"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "78857c6ae5117adf",
             "type": "split",
-            "dimension": 34.74470734744707,
+            "dimension": 38.860103626943,
             "children": [
               {
                 "id": "8f375c63def0d216",
@@ -88,30 +63,6 @@
                 "id": "8ffd1a79fcba4736",
                 "type": "tabs",
                 "children": [
-                  {
-                    "id": "1d8a91eddc45eaee",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Diary/2025/Monthly/2025-06.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "2025-06"
-                    }
-                  },
                   {
                     "id": "1b149334eee15bdd",
                     "type": "leaf",
@@ -135,9 +86,32 @@
                       "icon": "lucide-file",
                       "title": "2025-W22"
                     }
+                  },
+                  {
+                    "id": "1a01b2dfee1b371e",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Diary/2025/Monthly/2025-07.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "2025-07"
+                    }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "horizontal"
@@ -271,19 +245,8 @@
               "icon": "links-going-out",
               "title": "2025-06-12 的出链列表"
             }
-          },
-          {
-            "id": "d31f1cd629e25503",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {},
-              "icon": "history",
-              "title": "History"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "d9eb354692e3fb4f",
@@ -354,7 +317,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 493.5
+    "width": 402.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -376,46 +339,47 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "b89f477442ed7234",
+  "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
-    "Diary/2025/2025-07-17.md",
-    "Diary/2025/Weekly/2025-W29.md",
-    "Diary/2025/Monthly/2025-07.md",
-    "Diary/2025/2025-07-16.md",
+    "Diary/2025/asdasd.md",
+    "03Resource/工具/obsidian/template/diary.md",
+    "Diary/2025/2025-07-19.md",
+    "Diary/2025/2025-07-18.md",
+    "Diary/2025/Weekly/2025-W22.md",
     "Diary/2025/Weekly/2025-W28.md",
+    "Diary/2025/Monthly/2025-07.md",
+    "Diary/2025/Weekly/2025-W29.md",
+    "Diary/2025/爱上达到.md",
+    "Diary/2025/测试链接.md",
+    "Diary/2025/2025-06-11.md",
+    "课程设计/课程设计.md",
+    "课程设计/第一章.md",
+    "课程设计/cource1.md",
+    "课程设计/course2.md",
+    "Readme.md",
+    "课程设计",
+    "Diary/Diary.md",
+    "Diary/2025/unix 编程艺术.md",
+    "Diary/2025/研究报告.md",
+    "03Resource/工具/obsidian/template/monthly.md",
+    "03Resource/工具/obsidian/template/weekly.md",
+    "Diary/2025/2025-07-17.md",
+    "Diary/2025/2025-07-16.md",
     "Diary/2025/Monthly/2025-05.md",
     "Diary/2025/Monthly/2025-06.md",
-    "03Resource/工具/obsidian/template/weekly.md",
-    "03Resource/工具/obsidian/template/monthly.md",
     "02Area/02Area.md",
     "03Resource/工具/obsidian/scripts_quickadd/weekly_memos.js",
     "03Resource/工具/obsidian/scripts_quickadd/monthly_memos.js",
     "03Resource/工具/obsidian/scripts_quickadd/import_lumma_diary.js",
     "03Resource/工具/obsidian/scripts_quickadd",
-    "02Area/思维模型/思维模型.md",
     "assets/Readme/home.png",
-    "Diary/2025/Weekly/2025-W22.md",
-    "02Area/奕宸管理/奕宸管理.md",
-    "NetClip/Article from mp.weixin.qq.com.md",
-    "Diary/2025/Weekly/2025-W20.md",
-    "Diary/Diary.md",
     "Home/Home.canvas",
-    "Diary/2025/2025-06-09.md",
-    "Readme.md",
     "_infio_prompts",
-    "Home.md",
-    "Home/待办.md",
-    "Diary/2025/2025-06-11.md",
-    "asdasd.md",
-    "obsidian-livesync.md",
-    "撒大时代.md",
-    "smart-composer.md",
     "02 Company/ZC/项目/Hodgen",
     "02 Company/Siger",
     "01- 学习资料",
     "assets/Readme/xtool-logo.png",
     "03Resource/工具/obsidian/template/微信公众号封面设计-1.html",
-    "02 Company/ZC/项目/众华/会议",
     "files/xtool-logo.png",
     "files/home.png",
     "Home/demo.canvas"

@@ -12,7 +12,7 @@
               {
                 "id": "93f35edf851743e0",
                 "type": "tabs",
-                "dimension": 65.25529265255294,
+                "dimension": 61.13989637305699,
                 "children": [
                   {
                     "id": "c5cb75d852567bc4",
@@ -20,7 +20,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Diary/2025/2025-06-12.md",
+                        "file": "03Resource/工具/obsidian/template/diary.md",
                         "mode": "source",
                         "source": false,
                         "backlinks": true,
@@ -35,7 +35,7 @@
                         }
                       },
                       "icon": "lucide-file",
-                      "title": "2025-06-12"
+                      "title": "diary"
                     }
                   }
                 ]
@@ -43,7 +43,7 @@
               {
                 "id": "78857c6ae5117adf",
                 "type": "split",
-                "dimension": 34.744707347447076,
+                "dimension": 38.860103626943,
                 "children": [
                   {
                     "id": "8f375c63def0d216",
@@ -65,30 +65,6 @@
                     "id": "8ffd1a79fcba4736",
                     "type": "tabs",
                     "children": [
-                      {
-                        "id": "1d8a91eddc45eaee",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "Diary/2025/Monthly/2025-06.md",
-                            "mode": "source",
-                            "source": false,
-                            "backlinks": true,
-                            "backlinkOpts": {
-                              "collapseAll": false,
-                              "extraContext": false,
-                              "sortOrder": "alphabetical",
-                              "showSearch": false,
-                              "searchQuery": "",
-                              "backlinkCollapsed": false,
-                              "unlinkedCollapsed": true
-                            }
-                          },
-                          "icon": "lucide-file",
-                          "title": "2025-06"
-                        }
-                      },
                       {
                         "id": "1b149334eee15bdd",
                         "type": "leaf",
@@ -112,9 +88,32 @@
                           "icon": "lucide-file",
                           "title": "2025-W22"
                         }
+                      },
+                      {
+                        "id": "1a01b2dfee1b371e",
+                        "type": "leaf",
+                        "state": {
+                          "type": "markdown",
+                          "state": {
+                            "file": "Diary/2025/Monthly/2025-07.md",
+                            "mode": "source",
+                            "source": false,
+                            "backlinks": true,
+                            "backlinkOpts": {
+                              "collapseAll": false,
+                              "extraContext": false,
+                              "sortOrder": "alphabetical",
+                              "showSearch": false,
+                              "searchQuery": "",
+                              "backlinkCollapsed": false,
+                              "unlinkedCollapsed": true
+                            }
+                          },
+                          "icon": "lucide-file",
+                          "title": "2025-07"
+                        }
                       }
-                    ],
-                    "currentTab": 1
+                    ]
                   }
                 ],
                 "direction": "horizontal"
@@ -132,7 +131,7 @@
           {
             "id": "ebf6e326f9986220",
             "type": "tabs",
-            "dimension": 58.9311859443631,
+            "dimension": 58.931185944363094,
             "children": [
               {
                 "id": "c38ba062a467429c",
@@ -179,7 +178,7 @@
           {
             "id": "d48c3074f5b9c956",
             "type": "tabs",
-            "dimension": 41.0688140556369,
+            "dimension": 41.068814055636906,
             "children": [
               {
                 "id": "8a2e43e8218455e7",
@@ -320,7 +319,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 493.5
+        "width": 402.5
       },
       "left-ribbon": {
         "hiddenItems": {
@@ -334,9 +333,6 @@
           "random-note:开始漫游笔记": false,
           "workspaces:管理工作区布局": false,
           "templater-obsidian:Templater": false,
-          "outliner-md:New outliner file": false,
-          "homepage:Open homepage": false,
-          "omnisearch:Omnisearch": false,
           "obsidian-git:Open Git source control": false,
           "quickadd:QuickAdd": false,
           "canvas:新建白板": false,
@@ -346,7 +342,7 @@
         }
       },
       "active": "c5cb75d852567bc4",
-      "mtime": "2025-07-16T19:25:14+08:00",
+      "mtime": "2025-07-19T11:45:34+08:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
           "04Archive",

@@ -3,7 +3,7 @@ title: Readme
 aliases: [轻松做好周总结：PDCA 循环 + Obsidian 自动化工作流]
 tags: []
 created: 2025-03-23T09:10:01
-updated: 2025-07-17T20:40:48
+updated: 2025-07-17T20:50:18
 draft: true
 ---
 
@@ -47,7 +47,7 @@ draft: true
 * 周期笔记：[periodic-notes](obsidian://show-plugin?id=periodic-notes)，按周/季/月/年，按模板总结
 
 ### 知识同步
-* 实时同步：采用 webdav，可选择 nutstore sync 或者 remotely save
+* 实时同步：采用 webdav，可选择 [nutstore sync](https://github.com/nutstore/obsidian-nutstore-sync) 或者 remotely save
 * 实时同步：[[Resilio]]
 * 数据备份：[[obsidian-git]]，基于 git 服务
 	* 自建 git 服务端： gogos
