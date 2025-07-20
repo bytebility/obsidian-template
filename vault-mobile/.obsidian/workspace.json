@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Diary/2025/2025-07-19.md",
+                    "file": "03Resource/工具/obsidian/template/diary.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,7 +33,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-07-19"
+                  "title": "diary"
                 }
               }
             ]
@@ -334,16 +334,14 @@
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "net-clip:NetClip": false,
-      "infio-copilot:打开 Infio Copilot": false,
-      "periodic-notes:Open today": false,
-      "workspaces-plus:Manage workspaces": false
+      "infio-copilot:打开 Infio Copilot": false
     }
   },
   "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
+    "Diary/2025/2025-07-19.md",
     "03Resource/工具/obsidian/template/diary.md",
     "Diary/2025/2025-07-18.md",
-    "Diary/2025/2025-07-19.md",
     "Diary/Diary.md",
     "Diary/2025/Weekly/2025-W22.md",
     "Diary/2025/Monthly/2025-07.md",
