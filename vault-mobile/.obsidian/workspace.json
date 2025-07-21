@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "03Resource/工具/obsidian/template/diary.md",
+                    "file": "Diary/2025/2025-07-16.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,7 +33,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "diary"
+                  "title": "2025-07-16"
                 }
               }
             ]
@@ -269,8 +269,8 @@
             "state": {
               "type": "infio-chat-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "wand-sparkles",
+              "title": "Infio chat"
             }
           },
           {
@@ -279,7 +279,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home/Home.canvas",
+                "file": "Diary/2025/2025-07-16.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -334,16 +334,20 @@
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "net-clip:NetClip": false,
-      "infio-copilot:打开 Infio Copilot": false
+      "infio-copilot:打开 Infio Copilot": false,
+      "periodic-notes:Open today": false,
+      "workspaces-plus:Manage workspaces": false
     }
   },
   "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
-    "Diary/2025/2025-07-19.md",
-    "03Resource/工具/obsidian/template/diary.md",
-    "Diary/2025/2025-07-18.md",
-    "Diary/Diary.md",
     "Diary/2025/Weekly/2025-W22.md",
+    "Diary/2025/2025-07-16.md",
+    "Diary/2025/2025-07-18.md",
+    "Diary/2025/2025-07-19.md",
+    "_infio_prompts",
+    "03Resource/工具/obsidian/template/diary.md",
+    "Diary/Diary.md",
     "Diary/2025/Monthly/2025-07.md",
     "课程设计/课程设计.md",
     "NetClip/Tech",
@@ -366,7 +370,6 @@
     "03Resource/工具/obsidian/template/monthly.md",
     "03Resource/工具/obsidian/template/weekly.md",
     "Diary/2025/2025-07-17.md",
-    "Diary/2025/2025-07-16.md",
     "Diary/2025/Monthly/2025-05.md",
     "Diary/2025/Monthly/2025-06.md",
     "03Resource/工具/obsidian/scripts_quickadd/weekly_memos.js",
@@ -375,7 +378,6 @@
     "03Resource/工具/obsidian/scripts_quickadd",
     "assets/Readme/home.png",
     "Home/Home.canvas",
-    "_infio_prompts",
     "assets/Readme/xtool-logo.png",
     "files/xtool-logo.png",
     "files/home.png",

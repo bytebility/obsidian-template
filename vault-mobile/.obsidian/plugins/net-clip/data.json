@@ -101,6 +101,16 @@
       "id": "1752664984502",
       "name": "zenfeed",
       "url": "https://zenfeed.xyz/"
+    },
+    {
+      "id": "1753104202833",
+      "name": "bing",
+      "url": "https://cn.bing.com/?ensearch=1&FORM=BEHPTB"
+    },
+    {
+      "id": "1753104319617",
+      "name": "kite",
+      "url": "https://kite.kagi.com/2992261b-1a44-4e1b-93b7-e863cc20b49b/usa?data_lang=zh-Hans"
     }
   ],
   "showClock": true,
