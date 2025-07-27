@@ -20,6 +20,36 @@
       "type": "Macro",
       "command": true,
       "macroId": "6597d968-84ee-4ad7-ad7e-68606975bc0e"
+    },
+    {
+      "id": "9a6cb81a-8e29-46b2-823c-e866f8caab99",
+      "name": "概念笔记",
+      "type": "Template",
+      "command": true,
+      "templatePath": "03Resource/工具/obsidian/template/概念笔记.md",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "02Area"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": true,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "macros": [

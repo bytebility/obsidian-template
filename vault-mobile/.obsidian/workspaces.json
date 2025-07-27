@@ -20,7 +20,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Diary/2025/2025-07-16.md",
+                        "file": "Diary/2025/2025-07-17.md",
                         "mode": "source",
                         "source": false,
                         "backlinks": true,
@@ -35,7 +35,7 @@
                         }
                       },
                       "icon": "lucide-file",
-                      "title": "2025-07-16"
+                      "title": "2025-07-17"
                     }
                   }
                 ]
@@ -203,8 +203,18 @@
           {
             "id": "0dcb57c09f00a844",
             "type": "tabs",
-            "dimension": 31.82711198428291,
+            "dimension": 30.438931297709924,
             "children": [
+              {
+                "id": "bb9eb5040db2dec1",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
               {
                 "id": "6b3652b59febae87",
                 "type": "leaf",
@@ -214,46 +224,13 @@
                   "icon": "lucide-git-fork",
                   "title": "关系图谱"
                 }
-              },
-              {
-                "id": "c9b56a4a295aa010",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "Diary/2025/2025-06-12.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "2025-06-12 的反向链接列表"
-                }
-              },
-              {
-                "id": "c1bbf3e1e4b83551",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "Diary/2025/2025-07-19.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-going-out",
-                  "title": "2025-07-19 的出链列表"
-                }
               }
             ]
           },
           {
             "id": "d9eb354692e3fb4f",
             "type": "tabs",
-            "dimension": 68.17288801571709,
+            "dimension": 69.56106870229007,
             "children": [
               {
                 "id": "93cd81f982d06831",
@@ -323,6 +300,9 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "yearly-glance:打开年度概览": false,
+          "ace-code-editor:打开css片段管理器": false,
+          "obsidian42-brat:BRAT": false,
           "switcher:打开快速切换": false,
           "graph:查看关系图谱": false,
           "daily-notes:打开/创建今天的日记": false,
@@ -342,14 +322,15 @@
         }
       },
       "active": "c5cb75d852567bc4",
-      "mtime": "2025-07-21T21:20:53+08:00",
+      "mtime": "2025-07-27T21:53:54+08:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
           "03Resource",
           "03Resource/工具/obsidian",
           "03Resource/工具/obsidian/template",
           "Diary",
-          "Diary/2025"
+          "Diary/2025",
+          "Diary/2025/Weekly"
         ]
       }
     },
@@ -359,103 +340,36 @@
         "type": "split",
         "children": [
           {
-            "id": "3e38a3d9edf5268d",
-            "type": "split",
+            "id": "93f35edf851743e0",
+            "type": "tabs",
             "children": [
               {
-                "id": "93f35edf851743e0",
-                "type": "tabs",
-                "dimension": 31.676226896112176,
-                "children": [
-                  {
-                    "id": "baddf653e30fb9a0",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netclip-home-tab-view",
-                      "state": {},
-                      "icon": "home",
-                      "title": "Home"
-                    }
-                  },
-                  {
-                    "id": "f337219d00b5713e",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netClip_workspace_webview",
-                      "state": {},
-                      "icon": "globe",
-                      "title": "search - Search"
-                    }
-                  },
-                  {
-                    "id": "bea81a8cf6086719",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netClip_workspace_webview",
-                      "state": {},
-                      "icon": "globe",
-                      "title": "ai note taking - Google 搜索"
-                    }
-                  }
-                ],
-                "currentTab": 2
-              },
-              {
-                "id": "8f375c63def0d216",
-                "type": "tabs",
-                "dimension": 33.52453792224347,
-                "children": [
-                  {
-                    "id": "a65cce8e7b5a527b",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netClip_workspace_webview",
-                      "state": {},
-                      "icon": "globe",
-                      "title": "Weixin Official Accounts Platform"
-                    }
-                  },
-                  {
-                    "id": "40a7a5a8d53a5a0e",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netClip_workspace_webview",
-                      "state": {},
-                      "icon": "globe"
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "f4e82137a997e53b",
-                "type": "tabs",
-                "dimension": 34.79923518164436,
-                "children": [
-                  {
-                    "id": "92e0e979ec2422ce",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netClip_workspace_webview",
-                      "state": {},
-                      "icon": "globe",
-                      "title": "Zenfeed"
-                    }
-                  },
-                  {
-                    "id": "a81760615e76bcdb",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netClip_workspace_webview",
-                      "state": {},
-                      "icon": "globe",
-                      "title": "Kite - 新闻。升华。"
-                    }
-                  }
-                ],
-                "currentTab": 1
+                "id": "baddf653e30fb9a0",
+                "type": "leaf",
+                "state": {
+                  "type": "netclip-home-tab-view",
+                  "state": {},
+                  "icon": "home",
+                  "title": "Home"
+                }
               }
-            ],
-            "direction": "vertical"
+            ]
+          },
+          {
+            "id": "1b6007be875246a9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9582cb8c144c172a",
+                "type": "leaf",
+                "state": {
+                  "type": "netClip_workspace_webview",
+                  "state": {},
+                  "icon": "globe",
+                  "title": "Kite - 新闻。升华。"
+                }
+              }
+            ]
           }
         ],
         "direction": "vertical"
@@ -535,6 +449,234 @@
       "right": {
         "id": "a3b4cf71d68fadcd",
         "type": "split",
+        "children": [
+          {
+            "id": "472946fb2f12ce5c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a1504adee2baecac",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "反向链接"
+                }
+              },
+              {
+                "id": "b95238b1cfd6cb33",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "出链"
+                }
+              },
+              {
+                "id": "4a8a4b312f000412",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "标签"
+                }
+              },
+              {
+                "id": "8a3a856e41a614c5",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "大纲"
+                }
+              },
+              {
+                "id": "65d76f9ce85de029",
+                "type": "leaf",
+                "state": {
+                  "type": "tasks_timeline_view",
+                  "state": {},
+                  "icon": "calendar-clock",
+                  "title": "Tasks Timeline"
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 402.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "markdown-importer:打开 Markdown 格式转换器": false,
+          "random-note:开始漫游笔记": false,
+          "workspaces:管理工作区布局": false,
+          "infio-copilot:打开 Infio Copilot": false,
+          "yearly-glance:打开年度概览": false,
+          "ace-code-editor:打开css片段管理器": false,
+          "obsidian42-brat:BRAT": false,
+          "quickadd:QuickAdd": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-git:Open Git source control": false,
+          "net-clip:NetClip": false,
+          "periodic-notes:Open today": false,
+          "workspaces-plus:Manage workspaces": false
+        }
+      },
+      "active": "baddf653e30fb9a0",
+      "mtime": "2025-07-26T22:48:57+08:00",
+      "workspaces-plus:settings-v1": {
+        "explorerFoldState": [
+          "03Resource",
+          "03Resource/工具/obsidian",
+          "03Resource/工具/obsidian/template",
+          "Diary",
+          "Diary/2025"
+        ]
+      }
+    },
+    "日历": {
+      "main": {
+        "id": "17c8b79e9cd45d18",
+        "type": "split",
+        "children": [
+          {
+            "id": "93f35edf851743e0",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b2a47be8e3f53afe",
+                "type": "leaf",
+                "state": {
+                  "type": "yearly-glance-view",
+                  "state": {},
+                  "icon": "telescope",
+                  "title": "🔭 年度概览"
+                }
+              },
+              {
+                "id": "6610d7b9146cb372",
+                "type": "leaf",
+                "state": {
+                  "type": "yearly-glance-event-view",
+                  "state": {},
+                  "icon": "square-chart-gantt",
+                  "title": "🗂️ 事件管理"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "77ed88cd9d4edf18",
+        "type": "split",
+        "children": [
+          {
+            "id": "ebf6e326f9986220",
+            "type": "tabs",
+            "dimension": 58.931185944363094,
+            "children": [
+              {
+                "id": "c38ba062a467429c",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "文件列表"
+                }
+              },
+              {
+                "id": "4f38bdd78f389e08",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "搜索"
+                }
+              },
+              {
+                "id": "93932c8cddfed2d4",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "书签"
+                }
+              }
+            ]
+          },
+          {
+            "id": "d48c3074f5b9c956",
+            "type": "tabs",
+            "dimension": 41.068814055636906,
+            "children": [
+              {
+                "id": "8a2e43e8218455e7",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Recent Files"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 367.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "a3b4cf71d68fadcd",
+        "type": "split",
         "children": [],
         "direction": "horizontal",
         "width": 402.5,
@@ -542,6 +684,9 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "yearly-glance:打开年度概览": false,
+          "ace-code-editor:打开css片段管理器": false,
+          "obsidian42-brat:BRAT": false,
           "switcher:打开快速切换": false,
           "graph:查看关系图谱": false,
           "daily-notes:打开/创建今天的日记": false,
@@ -560,8 +705,8 @@
           "workspaces-plus:Manage workspaces": false
         }
       },
-      "active": "bea81a8cf6086719",
-      "mtime": "2025-07-21T21:28:15+08:00",
+      "active": "b2a47be8e3f53afe",
+      "mtime": "2025-07-26T22:57:22+08:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
           "03Resource",

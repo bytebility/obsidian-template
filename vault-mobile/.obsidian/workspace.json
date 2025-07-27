@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Diary/2025/2025-07-16.md",
+                    "file": "Diary/2025/2025-07-17.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,7 +33,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-07-16"
+                  "title": "2025-07-17"
                 }
               }
             ]
@@ -201,8 +201,18 @@
       {
         "id": "0dcb57c09f00a844",
         "type": "tabs",
-        "dimension": 31.82711198428291,
+        "dimension": 30.438931297709924,
         "children": [
+          {
+            "id": "bb9eb5040db2dec1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
           {
             "id": "6b3652b59febae87",
             "type": "leaf",
@@ -212,46 +222,13 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
-          },
-          {
-            "id": "c9b56a4a295aa010",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Diary/2025/2025-06-12.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "2025-06-12 的反向链接列表"
-            }
-          },
-          {
-            "id": "c1bbf3e1e4b83551",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Diary/2025/2025-07-19.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "2025-07-19 的出链列表"
-            }
           }
         ]
       },
       {
         "id": "d9eb354692e3fb4f",
         "type": "tabs",
-        "dimension": 68.17288801571709,
+        "dimension": 69.56106870229007,
         "children": [
           {
             "id": "93cd81f982d06831",
@@ -321,6 +298,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "yearly-glance:打开年度概览": false,
+      "ace-code-editor:打开css片段管理器": false,
+      "obsidian42-brat:BRAT": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
@@ -336,47 +316,49 @@
       "net-clip:NetClip": false,
       "infio-copilot:打开 Infio Copilot": false,
       "periodic-notes:Open today": false,
-      "workspaces-plus:Manage workspaces": false
+      "workspaces-plus:Manage workspaces": false,
+      "obsidian-memos:Thino": false
     }
   },
   "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
-    "Diary/2025/Weekly/2025-W22.md",
-    "Diary/2025/2025-07-16.md",
+    "Readme.md",
+    "Diary/2025/2025-07-17.md",
     "Diary/2025/2025-07-18.md",
     "Diary/2025/2025-07-19.md",
-    "_infio_prompts",
+    "Diary/2025/2025-07-27.md",
+    "Diary/2025/Weekly/2025-W29.md",
+    "Diary/2025/Weekly/2025-W28.md",
+    "Diary/2025/Weekly/2025-W30.md",
+    "Diary/2025/Weekly/2025-W31.md",
+    "Diary/2025/2025-07-16.md",
+    "今天不错.md",
+    "03Resource/工具/obsidian/template/概念笔记.md",
     "03Resource/工具/obsidian/template/diary.md",
-    "Diary/Diary.md",
+    "Diary/2025/Weekly/2025-W22.md",
     "Diary/2025/Monthly/2025-07.md",
+    "assets/Readme/home.png",
+    "_infio_prompts",
+    "Diary/Diary.md",
     "课程设计/课程设计.md",
     "NetClip/Tech",
     "NetClip/Research",
     "NetClip/Articles",
     "NetClip",
     "Diary/2025/asdasd.md",
-    "Diary/2025/Weekly/2025-W28.md",
-    "Diary/2025/Weekly/2025-W29.md",
     "Diary/2025/爱上达到.md",
     "Diary/2025/测试链接.md",
     "Diary/2025/2025-06-11.md",
     "课程设计/第一章.md",
     "课程设计/cource1.md",
     "课程设计/course2.md",
-    "Readme.md",
     "课程设计",
     "Diary/2025/unix 编程艺术.md",
     "Diary/2025/研究报告.md",
-    "03Resource/工具/obsidian/template/monthly.md",
-    "03Resource/工具/obsidian/template/weekly.md",
-    "Diary/2025/2025-07-17.md",
-    "Diary/2025/Monthly/2025-05.md",
-    "Diary/2025/Monthly/2025-06.md",
     "03Resource/工具/obsidian/scripts_quickadd/weekly_memos.js",
     "03Resource/工具/obsidian/scripts_quickadd/monthly_memos.js",
     "03Resource/工具/obsidian/scripts_quickadd/import_lumma_diary.js",
     "03Resource/工具/obsidian/scripts_quickadd",
-    "assets/Readme/home.png",
     "Home/Home.canvas",
     "assets/Readme/xtool-logo.png",
     "files/xtool-logo.png",

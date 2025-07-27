@@ -1,0 +1,197 @@
+{
+  "config": {
+    "year": 2025,
+    "layout": "12x1",
+    "viewType": "calendar",
+    "showWeekdays": true,
+    "highlightToday": true,
+    "highlightWeekends": true,
+    "showLegend": true,
+    "limitListHeight": false,
+    "hideEmptyDates": false,
+    "eventFontSize": "small",
+    "showHolidays": true,
+    "showBirthdays": true,
+    "showCustomEvents": true,
+    "mondayFirst": true,
+    "title": "",
+    "showEmojiBeforeTabName": true,
+    "showTooltips": true,
+    "colorful": true,
+    "showLunarDay": true,
+    "showDebugInfo": false,
+    "presetColors": [
+      {
+        "label": "红色",
+        "value": "#FF2D55",
+        "enable": true,
+        "id": "red"
+      },
+      {
+        "label": "橙色",
+        "value": "#FF9500",
+        "enable": true,
+        "id": "orange"
+      },
+      {
+        "label": "黄色",
+        "value": "#FFCC00",
+        "enable": true,
+        "id": "yellow"
+      },
+      {
+        "label": "绿色",
+        "value": "#65DB39",
+        "enable": true,
+        "id": "green"
+      },
+      {
+        "label": "蓝色",
+        "value": "#34AADC",
+        "enable": true,
+        "id": "blue"
+      },
+      {
+        "label": "紫色",
+        "value": "#CC73E1",
+        "enable": true,
+        "id": "purple"
+      },
+      {
+        "label": "棕色",
+        "value": "#A2845E",
+        "enable": true,
+        "id": "brown"
+      }
+    ],
+    "emojiOnTop": true,
+    "wrapEventText": true,
+    "gregorianDisplayFormat": "YYYY年MM月DD日"
+  },
+  "data": {
+    "holidays": [
+      {
+        "id": "holi-a692fe22",
+        "text": "结婚纪念日",
+        "eventDate": {
+          "isoDate": "2025-03-18",
+          "calendar": "GREGORIAN",
+          "userInput": {
+            "input": "2025-03-18",
+            "calendar": "GREGORIAN"
+          }
+        },
+        "color": "#FF2D55",
+        "foundDate": "2025-03-18",
+        "dateArr": [
+          "2025-03-18"
+        ]
+      }
+    ],
+    "birthdays": [
+      {
+        "id": "birth-8d6cac88",
+        "text": "娃娃生日",
+        "eventDate": {
+          "isoDate": "2025-02-20",
+          "calendar": "GREGORIAN",
+          "userInput": {
+            "input": "2025-02-20",
+            "calendar": "GREGORIAN"
+          }
+        },
+        "dateArr": [
+          "2025-02-20"
+        ],
+        "nextBirthday": "2026-02-20",
+        "age": 0,
+        "animal": "乙巳蛇",
+        "zodiac": "双鱼座"
+      },
+      {
+        "id": "birth-b710e79a",
+        "text": "老妈生日",
+        "eventDate": {
+          "isoDate": "2001-07-27",
+          "calendar": "LUNAR",
+          "userInput": {
+            "input": "2001-07-27",
+            "calendar": "LUNAR"
+          }
+        },
+        "remark": "xxx",
+        "dateArr": [
+          "2025-09-18"
+        ],
+        "nextBirthday": "2025-09-18",
+        "age": 23,
+        "animal": "辛巳蛇",
+        "zodiac": "狮子座"
+      }
+    ],
+    "customEvents": [
+      {
+        "id": "event-82dfd318",
+        "text": "Install YG plugin",
+        "eventDate": {
+          "isoDate": "2025-07-26",
+          "calendar": "GREGORIAN",
+          "userInput": {
+            "input": "2025-07-26",
+            "calendar": "GREGORIAN"
+          }
+        },
+        "emoji": "🎉",
+        "color": "#73d13d",
+        "isRepeat": false,
+        "remark": "Welcome to use Yearly Glance plugin! This is a sample event. You can hide or delete it as needed.",
+        "dateArr": [
+          "2025-07-26"
+        ]
+      },
+      {
+        "id": "event-1b34bc9c",
+        "text": "开始公众号-极客工具",
+        "eventDate": {
+          "isoDate": "2025-01-01",
+          "calendar": "GREGORIAN",
+          "userInput": {
+            "input": "2025-01-01",
+            "calendar": "GREGORIAN"
+          }
+        },
+        "dateArr": [
+          "2025-01-01"
+        ]
+      },
+      {
+        "id": "event-72863e56",
+        "text": "开始每天乒乓",
+        "eventDate": {
+          "isoDate": "2025-02-02",
+          "calendar": "GREGORIAN",
+          "userInput": {
+            "input": "2025-02-02"
+          }
+        },
+        "dateArr": [
+          "2025-02-02"
+        ]
+      },
+      {
+        "id": "event-97e67eb8",
+        "text": "开始阅读《乡土中国》",
+        "eventDate": {
+          "isoDate": "2025-03-02",
+          "calendar": "GREGORIAN",
+          "userInput": {
+            "input": "2025-03-02"
+          }
+        },
+        "dateArr": [
+          "2025-03-02"
+        ]
+      }
+    ]
+  }
+}

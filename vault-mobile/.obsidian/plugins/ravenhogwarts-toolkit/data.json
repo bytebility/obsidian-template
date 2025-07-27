@@ -1,0 +1,80 @@
+{
+  "config": {
+    "version": "1.0.0",
+    "logger": {
+      "level": 1,
+      "showTimestamp": true,
+      "showLevel": true,
+      "console": true,
+      "showNotifications": true,
+      "noticeTimeout": 5000
+    },
+    "developer": {
+      "enabled": false,
+      "enableCount": 0
+    },
+    "menu": {
+      "useSubMenu": true
+    }
+  },
+  "toolkit": {
+    "quickPath": {
+      "config": {
+        "enabled": true,
+        "useAbsolutePath": false,
+        "pathSeparator": "\n",
+        "addEditorMenu": true,
+        "addFileMenu": true
+      },
+      "data": {
+        "lastModified": "2025-07-26T22:45:59Z"
+      }
+    },
+    "tableEnhancements": {
+      "config": {
+        "enabled": true
+      },
+      "data": {
+        "lastModified": "2025-07-26T22:45:59Z"
+      }
+    },
+    "readingProgress": {
+      "config": {
+        "enabled": true,
+        "showTOC": true,
+        "tocAlwaysExpanded": false,
+        "useHeadingNumber": false,
+        "skipH1": false,
+        "progressStyle": "both",
+        "showToolbar": true,
+        "position": "right",
+        "offset": 12,
+        "tocWidth": 240,
+        "renderMarkdown": false,
+        "returnToCursor": {
+          "enabled": true,
+          "icon": "text-cursor-input"
+        },
+        "returnToTop": {
+          "enabled": true,
+          "icon": "arrow-up-to-line"
+        },
+        "returnToBottom": {
+          "enabled": true,
+          "icon": "arrow-down-to-line"
+        },
+        "jumpToNextHeading": {
+          "enabled": false,
+          "icon": "corner-right-down"
+        },
+        "jumpToPrevHeading": {
+          "enabled": false,
+          "icon": "corner-left-up"
+        }
+      },
+      "data": {
+        "lastModified": "2025-07-26T14:49:46.220Z"
+      }
+    }
+  }
+}
