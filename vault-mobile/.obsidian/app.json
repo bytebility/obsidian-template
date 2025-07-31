@@ -42,5 +42,6 @@
   "vimMode": false,
   "newFileFolderPath": "files",
   "newLinkFormat": "shortest",
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "showInlineTitle": false
 }
