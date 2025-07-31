@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Diary/2025/2025-06-11.md",
+                    "file": "Diary/2025/2025-07-17.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,7 +33,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-06-11"
+                  "title": "2025-07-17"
                 }
               }
             ]
@@ -222,39 +222,6 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
-          },
-          {
-            "id": "003f96274b98dfc5",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Diary/2025/2025-06-11.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "2025-06-11 的反向链接列表"
-            }
-          },
-          {
-            "id": "2b58fd4d80c01406",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Diary/2025/2025-06-11.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "2025-06-11 的出链列表"
-            }
           }
         ]
       },
@@ -331,6 +298,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-memos:Thino": false,
       "yearly-glance:打开年度概览": false,
       "ace-code-editor:打开css片段管理器": false,
       "obsidian42-brat:BRAT": false,
@@ -348,13 +316,14 @@
       "obsidian-git:Open Git source control": false,
       "net-clip:NetClip": false,
       "infio-copilot:打开 Infio Copilot": false,
-      "obsidian-memos:Thino": false,
       "periodic-notes:Open today": false,
       "workspaces-plus:Manage workspaces": false
     }
   },
   "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
+    "Diary/2025/2025-07-31.md",
+    "Diary/2025/2025-06-11.md",
     "Diary/2025/2025-07-17.md",
     "Diary/2025/2025-07-18.md",
     "Diary/2025/2025-07-24.md",
@@ -382,12 +351,10 @@
     "Diary/2025/asdasd.md",
     "Diary/2025/爱上达到.md",
     "Diary/2025/测试链接.md",
-    "Diary/2025/2025-06-11.md",
     "课程设计/第一章.md",
     "课程设计/cource1.md",
     "课程设计/course2.md",
     "课程设计",
-    "Diary/2025/unix 编程艺术.md",
     "03Resource/工具/obsidian/scripts_quickadd/weekly_memos.js",
     "03Resource/工具/obsidian/scripts_quickadd/monthly_memos.js",
     "03Resource/工具/obsidian/scripts_quickadd/import_lumma_diary.js",
