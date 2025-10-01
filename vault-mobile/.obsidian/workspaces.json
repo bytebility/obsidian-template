@@ -723,185 +723,39 @@
         "type": "split",
         "children": [
           {
-            "id": "bb40f069dd0f1a42",
-            "type": "split",
+            "id": "babf9ec21182a488",
+            "type": "tabs",
             "children": [
               {
-                "id": "1fb27419fd19fadb",
-                "type": "tabs",
-                "dimension": 32.63358778625955,
-                "children": [
-                  {
-                    "id": "7352a5cbd777f1cf",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "03Resource/GIS/兴趣点/兴趣点.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "兴趣点"
-                    }
+                "id": "bc45100da7e3b20b",
+                "type": "leaf",
+                "state": {
+                  "type": "map",
+                  "state": {
+                    "name": "杭州",
+                    "mapZoom": 13,
+                    "mapCenter": {
+                      "lat": 30.230073010525054,
+                      "lng": 120.14778030952607
+                    },
+                    "query": "tag:#trip OR tag:#cookie  ",
+                    "queryError": false,
+                    "chosenMapSource": 0,
+                    "forceHistorySave": false,
+                    "followActiveNote": false,
+                    "embeddedHeight": 300,
+                    "autoFit": false,
+                    "lock": false,
+                    "showLinks": false,
+                    "linkColor": "red",
+                    "markerLabels": "off",
+                    "editMode": false
                   },
-                  {
-                    "id": "de4a1391119b2cc9",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "03Resource/GIS/兴趣点/好玩的.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "好玩的"
-                    }
-                  },
-                  {
-                    "id": "ebd282df91c6d38b",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "03Resource/GIS/兴趣点/好吃的.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "好吃的"
-                    }
-                  },
-                  {
-                    "id": "4aa5c5da94902fd4",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "03Resource/GIS/兴趣点/好吃的.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "好吃的"
-                    }
-                  },
-                  {
-                    "id": "912e25826fb0c9bb",
-                    "type": "leaf",
-                    "state": {
-                      "type": "map",
-                      "state": {
-                        "name": "杭州",
-                        "mapZoom": 13,
-                        "mapCenter": {
-                          "lat": 30.244764573659864,
-                          "lng": 120.143490893652
-                        },
-                        "query": "",
-                        "queryError": false,
-                        "chosenMapSource": 0,
-                        "forceHistorySave": false,
-                        "followActiveNote": false,
-                        "embeddedHeight": 300,
-                        "autoFit": false,
-                        "lock": false,
-                        "showLinks": false,
-                        "linkColor": "red",
-                        "markerLabels": "off",
-                        "editMode": false
-                      },
-                      "icon": "map-pin",
-                      "title": "Interactive Map View"
-                    }
-                  },
-                  {
-                    "id": "0f904551b085a866",
-                    "type": "leaf",
-                    "state": {
-                      "type": "empty",
-                      "state": {},
-                      "icon": "lucide-file",
-                      "title": "新标签页"
-                    }
-                  }
-                ],
-                "currentTab": 4
-              },
-              {
-                "id": "babf9ec21182a488",
-                "type": "tabs",
-                "dimension": 67.36641221374046,
-                "children": [
-                  {
-                    "id": "bc45100da7e3b20b",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "03Resource/GIS/杭州爬山路线.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "杭州爬山路线"
-                    }
-                  }
-                ]
+                  "icon": "map-pin",
+                  "title": "Interactive Map View"
+                }
               }
-            ],
-            "direction": "horizontal"
+            ]
           }
         ],
         "direction": "vertical"
@@ -1141,7 +995,7 @@
         }
       },
       "active": "bc45100da7e3b20b",
-      "mtime": "2025-10-01T15:16:36+08:00",
+      "mtime": "2025-10-01T18:18:57+08:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
           "03Resource",
@@ -1156,5 +1010,5 @@
       }
     }
   },
-  "active": "地图"
+  "active": "主页"
 }

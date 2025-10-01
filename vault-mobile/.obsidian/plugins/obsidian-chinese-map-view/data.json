@@ -162,10 +162,10 @@
     }
   ],
   "mapControlsSections": {
-    "filtersDisplayed": false,
+    "filtersDisplayed": true,
     "viewDisplayed": false,
     "linksDisplayed": false,
-    "presetsDisplayed": true,
+    "presetsDisplayed": false,
     "editDisplayed": false,
     "minimized": false
   },

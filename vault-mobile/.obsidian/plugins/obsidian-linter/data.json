@@ -254,7 +254,7 @@
     "dedupe-yaml-array-values": {
       "enabled": true,
       "dedupe-alias-key": true,
-      "dedupe-tag-key": false,
+      "dedupe-tag-key": true,
       "dedupe-array-keys": false,
       "ignore-keys": ""
     },
