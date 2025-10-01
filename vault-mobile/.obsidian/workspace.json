@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3e38a3d9edf5268d",
+        "id": "bb40f069dd0f1a42",
         "type": "split",
         "children": [
           {
-            "id": "93f35edf851743e0",
+            "id": "1fb27419fd19fadb",
             "type": "tabs",
-            "dimension": 61.13989637305699,
+            "dimension": 32.63358778625955,
             "children": [
               {
-                "id": "c5cb75d852567bc4",
+                "id": "7352a5cbd777f1cf",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Diary/2025/2025-07-17.md",
+                    "file": "03Resource/GIS/兴趣点/兴趣点.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,91 +33,156 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-07-17"
+                  "title": "兴趣点"
+                }
+              },
+              {
+                "id": "de4a1391119b2cc9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "03Resource/GIS/兴趣点/好玩的.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "好玩的"
+                }
+              },
+              {
+                "id": "ebd282df91c6d38b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "03Resource/GIS/兴趣点/好吃的.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "好吃的"
+                }
+              },
+              {
+                "id": "4aa5c5da94902fd4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "03Resource/GIS/兴趣点/好吃的.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "好吃的"
+                }
+              },
+              {
+                "id": "912e25826fb0c9bb",
+                "type": "leaf",
+                "state": {
+                  "type": "map",
+                  "state": {
+                    "name": "杭州",
+                    "mapZoom": 13,
+                    "mapCenter": {
+                      "lat": 30.244764573659864,
+                      "lng": 120.143490893652
+                    },
+                    "query": "",
+                    "queryError": false,
+                    "chosenMapSource": 0,
+                    "forceHistorySave": false,
+                    "followActiveNote": false,
+                    "embeddedHeight": 300,
+                    "autoFit": false,
+                    "lock": false,
+                    "showLinks": false,
+                    "linkColor": "red",
+                    "markerLabels": "off",
+                    "editMode": false
+                  },
+                  "icon": "map-pin",
+                  "title": "Interactive Map View"
+                }
+              },
+              {
+                "id": "0f904551b085a866",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "新标签页"
+                }
+              }
+            ],
+            "currentTab": 4
+          },
+          {
+            "id": "babf9ec21182a488",
+            "type": "tabs",
+            "dimension": 67.36641221374046,
+            "children": [
+              {
+                "id": "bc45100da7e3b20b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "03Resource/GIS/杭州爬山路线.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "杭州爬山路线"
                 }
               }
             ]
-          },
-          {
-            "id": "78857c6ae5117adf",
-            "type": "split",
-            "dimension": 38.860103626943,
-            "children": [
-              {
-                "id": "8f375c63def0d216",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "baddf653e30fb9a0",
-                    "type": "leaf",
-                    "state": {
-                      "type": "netclip-home-tab-view",
-                      "state": {},
-                      "icon": "home",
-                      "title": "Home"
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "8ffd1a79fcba4736",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "1b149334eee15bdd",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Diary/2025/Weekly/2025-W22.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "2025-W22"
-                    }
-                  },
-                  {
-                    "id": "1a01b2dfee1b371e",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Diary/2025/Monthly/2025-07.md",
-                        "mode": "source",
-                        "source": false,
-                        "backlinks": true,
-                        "backlinkOpts": {
-                          "collapseAll": false,
-                          "extraContext": false,
-                          "sortOrder": "alphabetical",
-                          "showSearch": false,
-                          "searchQuery": "",
-                          "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
-                        }
-                      },
-                      "icon": "lucide-file",
-                      "title": "2025-07"
-                    }
-                  }
-                ]
-              }
-            ],
-            "direction": "horizontal"
           }
         ],
-        "direction": "vertical"
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -222,6 +287,39 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
+          },
+          {
+            "id": "cace0638e86d217d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Diary/2025/2025-07-17.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-07-17 的反向链接列表"
+            }
+          },
+          {
+            "id": "5b9b07639d41f9ea",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Diary/2025/2025-07-17.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2025-07-17 的出链列表"
+            }
           }
         ]
       },
@@ -294,10 +392,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 402.5
+    "width": 402.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-chinese-map-view:Open map view": false,
+      "bases:创建新数据库": false,
       "obsidian-memos:Thino": false,
       "yearly-glance:打开年度概览": false,
       "ace-code-editor:打开css片段管理器": false,
@@ -320,11 +421,31 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "c5cb75d852567bc4",
+  "active": "bc45100da7e3b20b",
   "lastOpenFiles": [
+    "Diary/2025/2025-07-17.md",
+    "03Resource/GIS/杭州爬山路线.md",
+    "03Resource/GIS/使用 Obsidian 打造个人 GIS 系统.md",
+    "03Resource/GIS/兴趣点/好吃的.md",
+    "03Resource/GIS/兴趣点/好玩的.md",
+    "03Resource/GIS/兴趣点/__pycache__/坐标转换工具.cpython-310.pyc",
+    "03Resource/GIS/兴趣点/__pycache__",
+    "03Resource/GIS/兴趣点/搜索杭州地点.py",
+    "03Resource/GIS/兴趣点/兴趣点.md",
+    "03Resource/GIS/兴趣点/坐标转换工具.py",
+    "03Resource/GIS/兴趣点.md",
+    "03Resource/GIS/兴趣点/工作经历.md",
+    "03Resource/GIS/兴趣点/家庭地址.md",
+    "03Resource/GIS/主题地图/唐三藏取经路书/唐三藏取经途经点.geojson",
+    "03Resource/GIS/主题地图/唐三藏取经路书/唐玄藏取经路线可视化.html",
+    "03Resource/GIS/主题地图/唐三藏取经路书/唐玄藏取经路书.md",
+    "03Resource/GIS/主题地图/唐三藏取经路书/唐三藏取经路线.geojson",
+    "03Resource/GIS/主题地图/唐三藏取经路书",
+    "03Resource/GIS/主题地图/主题地图.md",
+    "03Resource/GIS/主题地图",
+    "03Resource/GIS/兴趣点",
     "Diary/2025/2025-07-31.md",
     "Diary/2025/2025-06-11.md",
-    "Diary/2025/2025-07-17.md",
     "Diary/2025/2025-07-18.md",
     "Diary/2025/2025-07-24.md",
     "Readme.md",
@@ -337,28 +458,7 @@
     "Diary/2025/2025-07-16.md",
     "今天不错.md",
     "03Resource/工具/obsidian/template/概念笔记.md",
-    "03Resource/工具/obsidian/template/diary.md",
-    "Diary/2025/Weekly/2025-W22.md",
-    "Diary/2025/Monthly/2025-07.md",
     "assets/Readme/home.png",
-    "_infio_prompts",
-    "Diary/Diary.md",
-    "课程设计/课程设计.md",
-    "NetClip/Tech",
-    "NetClip/Research",
-    "NetClip/Articles",
-    "NetClip",
-    "Diary/2025/asdasd.md",
-    "Diary/2025/爱上达到.md",
-    "Diary/2025/测试链接.md",
-    "课程设计/第一章.md",
-    "课程设计/cource1.md",
-    "课程设计/course2.md",
-    "课程设计",
-    "03Resource/工具/obsidian/scripts_quickadd/weekly_memos.js",
-    "03Resource/工具/obsidian/scripts_quickadd/monthly_memos.js",
-    "03Resource/工具/obsidian/scripts_quickadd/import_lumma_diary.js",
-    "03Resource/工具/obsidian/scripts_quickadd",
     "Home/Home.canvas",
     "assets/Readme/xtool-logo.png",
     "files/xtool-logo.png",

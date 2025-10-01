@@ -1,0 +1,1332 @@
+{
+  "type": "FeatureCollection",
+  "name": "唐三藏取经地点_4326",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.9442056846076,
+          34.26140223918693
+        ]
+      },
+      "properties": {
+        "id": 0,
+        "name": "长安（西安）",
+        "description": "玄奘于公元629年从长安出发，开始了前往印度佛教圣地的史诗般旅程。当时皇帝正在与中亚民族作战，玄奘未经皇帝许可出行。他向西北行进前往凉州。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.63908431640856,
+          37.92578414813169
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "凉州（武威）",
+        "description": "玄奘在凉州停留了一个月为旅程做准备，然后向东北行进前往安西。由于没有皇帝的许可，玄奘必须小心行事，白天隐藏，夜间赶路。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.79999985167815,
+          40.50000017009619
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "name": "安西（安西）",
+        "description": "在安西边境前哨，玄奘收集补给，然后开始穿越戈壁沙漠的200英里旅程，沿着丝绸之路北道前往哈密绿洲。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.55004345814784,
+          42.89608911178648
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "name": "哈密（哈密）",
+        "description": "玄奘补充了补给，然后继续向西前往吐鲁番城。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.21061469661751,
+          43.004019006602384
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "name": "吐鲁番（吐鲁番）",
+        "description": "玄奘于公元630年抵达吐鲁番，拜会了同样是虔诚佛教徒的国王。国王为他提供了前往其他丝绸之路国家的介绍信和作为资金的贵重物品。玄奘在吐鲁番停留了一个月，向国王的臣民讲经。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.56073822000965,
+          42.05590817953255
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "name": "喀喇沙尔（焉耆）",
+        "description": "玄奘短暂停留在喀喇沙尔，这是一个繁荣的王国，拥有十座寺院和近2000名小乘僧侣。从此处，他的旅程继续向西沿着丝绸之路前往龟兹。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.89785405524128,
+          41.65624103450452
+        ]
+      },
+      "properties": {
+        "id": 6,
+        "name": "龟兹（新疆）",
+        "description": "龟兹是丝绸之路北道上的重要佛教中心，玄奘花了时间参观了许多非大乘佛教寺院、佛塔和周边地区装饰精美的佛窟。玄奘离开龟兹的时间被推迟了两周。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26338817733462,
+          41.16755033670338
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "name": "阿克苏",
+        "description": "侥幸逃脱了两千名突厥土匪后，玄奘抵达阿克苏，这在许多方面类似于龟兹。从此处，他将穿越天山山脉，通过海拔26000英尺的别迭里山口。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.29771778001415,
+          42.827449689587304
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "name": "托克马克",
+        "description": "穿越别迭里山口花了七天时间，代价高昂，队伍中三分之一的人因饥饿或冻死而损失。玄奘最终于公元630年抵达托克马克，受到西突厥可汗的热烈欢迎。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.24837102775226,
+          41.320300310858116
+        ]
+      },
+      "properties": {
+        "id": 9,
+        "name": "塔什干",
+        "description": "穿越了'千泉之地'——亚历山大山以北的平原以及楚河和库拉加提河的源头后，玄奘抵达塔什干。从此处，玄奘继续向西南行进前往撒马尔罕。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.94312961668366,
+          39.662138841166396
+        ]
+      },
+      "properties": {
+        "id": 10,
+        "name": "撒马尔罕",
+        "description": "在当时受波斯影响的撒马尔罕，玄奘参观了废弃的佛教寺庙，然后转向南前往昆都士。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.86033116430882,
+          36.74541801655619
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "name": "昆都士（昆都士）",
+        "description": "利用丝绸之路上的许多亲属关系，玄奘绕道前往昆都士拜访在位王子Tardu，西突厥可汗的长子。然而，这证明是一个不幸的时机。王子的妻子..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.89317699867269,
+          36.75965404579015
+        ]
+      },
+      "properties": {
+        "id": 12,
+        "name": "巴尔赫",
+        "description": "在巴尔赫，玄奘参观了许多佛教圣地或佛塔，遇见了僧侣和佛教教师Prajnakara，与他一起学习早期佛教经典。他还在这里获得了重要的《大毗婆沙论》文本，后来将其翻译成中文。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.81396902964433,
+          34.83472977561258
+        ]
+      },
+      "properties": {
+        "id": 13,
+        "name": "巴米扬",
+        "description": "在穿越兴都库什山脉的艰难旅程中，经历了20到30英尺深的暴风雪和积雪后，玄奘抵达了巴米扬山谷绿洲。在这里，玄奘参观了许多小乘佛教寺院（一个罕见的佛教派别）和两个巨大的..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.76443519224506,
+          34.96364175300813
+        ]
+      },
+      "properties": {
+        "id": 14,
+        "name": "迦毕试",
+        "description": "在玄奘朝圣时期，迦毕试是一个重要的政治、商业和艺术中心，位于丝绸之路的十字路口，大约在罗马和长安之间的中点。在这里，玄奘发现了一百座寺院和6000名..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.46098706701774,
+          34.431761950621144
+        ]
+      },
+      "properties": {
+        "id": 15,
+        "name": "那揭罗曷（贾拉拉巴德）",
+        "description": "继续向东南行进，玄奘抵达贾拉拉巴德，古称那揭罗曷城。在这里，他向一座300英尺高的佛塔致敬，该塔由阿育王建造，标志着佛陀遇见燃灯佛并收到自己成佛预言的地方。他..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.55335372401896,
+          34.006352179666045
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "name": "白沙瓦",
+        "description": "安全通过了以土匪出没闻名的开伯尔山口后，玄奘进入白沙瓦山谷。玄奘发现该地区佛教正在衰落，许多寺院和佛塔成为废墟，包括曾经宏伟的..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.73593900048752,
+          34.150927870534474
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "name": "Charsadda",
+        "description": "玄奘在Charsadda附近找到了四大佛塔中的第一座。这座佛塔纪念佛陀为慈善捐献眼睛的故事。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.15545672980616,
+          34.41144168206949
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "name": "unknown location",
+        "description": "在玄奘的编年史中，他描述了位于白沙瓦和布纳尔之间山丘上的一个地点，那里是四大佛塔中的第二座。这座佛塔与佛陀为让鸽子生存而献出自己肉体的故事有关。<br>在他返回时..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.41376369652954,
+          34.82595791188018
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "name": "Manikyala",
+        "description": "（大致位置）<br>在斯瓦特山谷的马尼基亚拉发现了四大佛塔中的第三座。这个故事描述了佛陀如何献出生命，让母虎能够喂养她的幼崽。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.54581514499822,
+          35.20523312308793
+        ]
+      },
+      "properties": {
+        "id": 20,
+        "name": "Udyana",
+        "description": "（大致位置）<br>与在白沙瓦一样，玄奘发现乌仗那的大乘佛教正在衰落。该地区现在只有十座寺院，而以前有1400座寺院容纳18000名僧侣。玄奘继续沿着斯瓦特山谷向上游行进..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.55371133634672,
+          35.88348712450175
+        ]
+      },
+      "properties": {
+        "id": 21,
+        "name": "Source of the Swat River",
+        "description": "（大致位置）<br>在兴都库什山脉高处，玄奘最终到达斯瓦特河的源头，那里被认为是龙阿帕拉拉的居所。从此处，他向东行进，穿越兴都库什山脉下降到..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54728666827845,
+          35.52517098951612
+        ]
+      },
+      "properties": {
+        "id": 22,
+        "name": "Darel",
+        "description": "前往达雷尔的旅程，穿越山脉和峡谷，极其危险。玄奘谈到\"绳索桥或铁链桥；...用木钉作台阶跨越悬崖的桥梁\"。玄奘在印度河上游的目的地是..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.43178390113148,
+          34.016021317454204
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "name": "Hund",
+        "description": "在Hund，玄奘安全地穿越了危险的1.5英里宽的印度河，然后继续前往塔克西拉山谷城市。在公元645年返回中国的途中，他的运气就没那么好了，当他的船...时丢失了许多珍贵的经文。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.79721316887047,
+          33.73768813307973
+        ]
+      },
+      "properties": {
+        "id": 24,
+        "name": "Taxila (Takkasila)",
+        "description": "玄奘在塔克西拉短暂停留，注意到那里有许多但空无一人的大乘佛教寺院，然后继续前往Sirsukh，塔克西拉古城中的最后一座城市。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.84622165751772,
+          33.77515167401152
+        ]
+      },
+      "properties": {
+        "id": 25,
+        "name": "Sirsukh",
+        "description": "从Sirsukh出发，玄奘参观了邻近地区一些著名的佛教遗迹，包括Bhallar和Kunala佛塔。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.82569784821858,
+          33.813508666532066
+        ]
+      },
+      "properties": {
+        "id": 26,
+        "name": "Bhallar stupa",
+        "description": "Bhallar佛塔或称\"献首佛塔\"，是塔克西拉最高的佛塔。它由印度皇帝阿育王于公元前3世纪建造，以纪念佛陀献出自己头颅的地点。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.88749744819819,
+          33.77920169374005
+        ]
+      },
+      "properties": {
+        "id": 27,
+        "name": "Kunala stupa",
+        "description": "Kunala佛塔被认为是由印度皇帝阿育王建造的，以纪念他儿子被弄瞎的地方。在这个故事中，Kunala的继母伪造了她丈夫的命令，在儿子拒绝她之后让皇帝弄瞎自己的儿子。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8037620529819,
+          34.07882489231515
+        ]
+      },
+      "properties": {
+        "id": 28,
+        "name": "Srinagar",
+        "description": "离开Sirsukh后，玄奘向东行进直到杰赫勒姆河，然后沿着河流向北进入克什米尔山区。据信他通过了Barula峡谷，沿着河流进入斯利那加。在城市的郊区，玄奘收到..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.61613722776872,
+          30.918646167936316
+        ]
+      },
+      "properties": {
+        "id": 29,
+        "name": "Chinabhukti (Firozpur)",
+        "description": "公元633年，玄奘向南前往Chinabhukti（被认为是现代的费罗兹普尔）。在这里，他与僧侣王子Vinitaprabha学习了一年，然后继续向东前往贾朗达尔。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.57907102535484,
+          31.316247757738864
+        ]
+      },
+      "properties": {
+        "id": 30,
+        "name": "Jalandhara (Jullundur)",
+        "description": "玄奘于公元634年抵达贾朗达尔，在那里停留了整个雨季，然后前往库鲁山谷的非大乘佛教寺院。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1146682402329,
+          31.95813386820537
+        ]
+      },
+      "properties": {
+        "id": 31,
+        "name": "Kulu Valley",
+        "description": "（大致位置）<br>在库鲁山谷，玄奘发现了20座寺院和一千多名僧侣，主要是小乘佛教徒。渴望到达印度圣地，他继续向南前往Bairata，然后向东前往亚穆纳河上的马图拉。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.18349078626011,
+          27.450323830526337
+        ]
+      },
+      "properties": {
+        "id": 32,
+        "name": "Bairata",
+        "description": "从Bairata出发，玄奘向东前往繁荣的文化中心马图拉。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.68346800348729,
+          27.489922749024284
+        ]
+      },
+      "properties": {
+        "id": 33,
+        "name": "马图拉",
+        "description": "玄奘很快抵达马图拉，这是迦腻色伽王的南都。马图拉是一个重要的印度教中心，被信徒视为他们的神克里希纳的故乡。尽管对克里希纳的崇拜逐渐取代佛教，玄奘..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.36778294461335,
+          30.170211025214726
+        ]
+      },
+      "properties": {
+        "id": 34,
+        "name": "Srughna",
+        "description": "（大致位置）<br>玄奘于公元634年冬季抵达古城Srughna。在这里，他停留了整个雨季，直到公元635年春季，学习小乘佛教思想。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.12678300300085,
+          29.486080010675206
+        ]
+      },
+      "properties": {
+        "id": 35,
+        "name": "Matipura (Mandawar)",
+        "description": "玄奘于公元635年夏季抵达Matipura，即现代的Mandawar，在横渡印度最神圣的恒河之后。玄奘注意到\"河水的颜色各异，巨浪翻滚：其中有许多奇妙的生物...\"。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.36446203869677,
+          27.337157158629893
+        ]
+      },
+      "properties": {
+        "id": 36,
+        "name": "Sankasya (Kapitha)",
+        "description": "Sankasya，或称现代的Kapitha，是佛教八个传统朝圣地之一，被认为是佛陀从天而降的地方。当玄奘于公元635年抵达时，他发现了三座70英尺高的砖砌梯子..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.91772723574071,
+          27.057290782210295
+        ]
+      },
+      "properties": {
+        "id": 37,
+        "name": "Kanyakubja (Kannauj)",
+        "description": "在恒河上，玄奘抵达Kanyakubja，戒日王帝国的首都。戒日王被称为印度整个北部的\"主宰\"，他将领土扩展到阿萨姆、古吉拉特，以及北部的托卡里斯坦山区..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.19867730320806,
+          26.796800393148878
+        ]
+      },
+      "properties": {
+        "id": 38,
+        "name": "阿约提亚",
+        "description": "玄奘渴望访问阿约提亚，因为它是大乘佛教唯心主义的发源地。在城市南部，玄奘发现了古老的寺院，无著和世亲兄弟最初在这里创作经文，并在...宣扬佛教的这一新分支。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.25188263801866,
+          25.308045790927853
+        ]
+      },
+      "properties": {
+        "id": 39,
+        "name": "Kausambi (Kosam)",
+        "description": "在亚穆纳河上的Kausambi，玄奘发现了一座60英尺高的佛教寺庙，里面有一尊大型的檀香木佛像。据说，委托制作这尊雕像的Udayana王曾请求佛陀的一位弟子将一位艺术家带到..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.03950391967749,
+          27.510326777388286
+        ]
+      },
+      "properties": {
+        "id": 40,
+        "name": "Sravasti",
+        "description": "在旅行了5000多英里后，玄奘终于进入了\"佛教圣地\"。这里是与佛陀一生主要事件相关的地点——他的出生、死亡、生活、工作和获得启蒙的地方。<br>玄奘的第一站是..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.04898833244853,
+          27.51569428795975
+        ]
+      },
+      "properties": {
+        "id": 41,
+        "name": "Angulimala stupa",
+        "description": "在舍卫城期间，玄奘参观了Angulimala佛塔。这座佛塔以一个杀害了许多人的男子命名，他从每个受害者身上切下一根手指制作\"手指花环项链\"。故事讲述了佛陀如何取代..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.05492358437617,
+          27.5437027532928
+        ]
+      },
+      "properties": {
+        "id": 42,
+        "name": "Kapilavastu",
+        "description": "玄奘继续向东前往迦毗罗卫，这是尼泊尔南部喜马拉雅山麓的亚热带地区。玄奘发现了佛陀父亲净饭王的宫殿废墟，以及被认为是其母亲寝宫的地基..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.27550939399885,
+          27.47362836491475
+        ]
+      },
+      "properties": {
+        "id": 43,
+        "name": "Lumbini",
+        "description": "迦毗罗卫以东十英里是蓝毗尼，四个主要佛教圣地中的第一个。正是在这里，在一棵娑罗树下，佛陀于公元前563年出生。根据传统，摩耶王后直立分娩，右手抓住树枝..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.91142768203085,
+          26.74537999076081
+        ]
+      },
+      "properties": {
+        "id": 44,
+        "name": "Kushinagara (Kasia)",
+        "description": "参观了佛陀的诞生地后，玄奘向东南前往拘尸那罗，佛陀逝世的地方。根据传统，佛陀在80岁时获得涅槃，不久后就去世了；他的最后一句话被认为是：\"一切...\"。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.0348399495663,
+          25.376367737520567
+        ]
+      },
+      "properties": {
+        "id": 45,
+        "name": "Sarnath",
+        "description": "玄奘的目的地是鹿野苑——一个宁静的地方，佛陀在这里进行了第一次布道。玄奘与1500名僧侣一起住在鹿野苑寺院。寺院的中心是主神殿，里面供奉着..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.31362238225275,
+          25.729736714156736
+        ]
+      },
+      "properties": {
+        "id": 46,
+        "name": "Vaisali",
+        "description": "在此前的旅程中，玄奘已经参观了四个次要朝圣地点中的两个，分别在僧伽施和舍卫城。在毗舍离，他参观了第三个：猴子献蜜佛塔。正是在这里，猴子们拿走了佛陀的乞食钵并爬上了一棵树..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.13563198846309,
+          25.614983354764355
+        ]
+      },
+      "properties": {
+        "id": 47,
+        "name": "Patailputra (Patna)",
+        "description": "玄奘在前往菩提伽耶的途中停留，参观了曾经宏伟的阿育王宫殿废墟和第三次佛教理事会的遗址。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.99216564767752,
+          24.695364912940313
+        ]
+      },
+      "properties": {
+        "id": 48,
+        "name": "菩提伽耶",
+        "description": "玄奘最终抵达菩提伽耶——他16年史诗般朝圣之旅的终极目的地。菩提伽耶是所有佛教圣地中最神圣的，因为正是在这里，佛陀在菩提树下获得了启蒙。根据传统，在..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.52002379353719,
+          25.31074598421201
+        ]
+      },
+      "properties": {
+        "id": 49,
+        "name": "那烂陀",
+        "description": "玄奘在护卫的陪同下来到那烂陀，作为尊敬的寺主戒贤大师的客人。<br>那烂陀是印度最重要的佛教学习和学术中心，容纳了来自亚洲各地的10000名僧侣。在该地有一座大..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.27563540667254,
+          25.27233017781551
+        ]
+      },
+      "properties": {
+        "id": 50,
+        "name": "Irana",
+        "description": "（大致位置）<br>在那烂陀以东是Irana王国。玄奘注意到该地区有十座寺院和4000名僧侣。玄奘花时间学习小乘佛教经典，然后沿着恒河前往现代的孟加拉国..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.51037556898154,
+          26.6229082704378
+        ]
+      },
+      "properties": {
+        "id": 51,
+        "name": "Assam",
+        "description": "（大致位置）<br>玄奘拜访了阿萨姆的印度教国王，注意到他对所有宗教都很宽容，允许臣民自由信仰。然后玄奘折返回到孟加拉国，再向东前往Samatata。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.23071278731656,
+          23.584125869736337
+        ]
+      },
+      "properties": {
+        "id": 52,
+        "name": "Samatata",
+        "description": "（大致位置）<br>玄奘在日记中没有解释他前往Samatata的原因。返回时，玄奘重新穿越了\"恒河河口\"，然后向南前往Tamrallipti。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.92418498876094,
+          22.291161208919934
+        ]
+      },
+      "properties": {
+        "id": 53,
+        "name": "Tamrallipti (Tamluk)",
+        "description": "玄奘抵达Tamrallipti——早期中国佛教朝圣者法显和义净从中国返回时出发的海港。正是在Tamrallipti，玄奘遇到了一个人，建议他访问僧伽罗，即现代的斯里兰卡..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.1118156051133,
+          20.344626775991173
+        ]
+      },
+      "properties": {
+        "id": 54,
+        "name": "South Kosala",
+        "description": "（大致位置）<br>在向南的途中，玄奘向西绕道进入南乔萨罗地区。当时，这里是一个重要的佛教中心，有100座寺院和10000名大乘佛教僧侣。南乔萨罗也为玄奘所熟知..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.49658192481631,
+          16.67829329892345
+        ]
+      },
+      "properties": {
+        "id": 55,
+        "name": "Andhra",
+        "description": "（大致位置）<br>在古代安得拉王国，玄奘注意到那里有二十座寺院和5000名僧侣。这里也是著名逻辑学家陈那的故乡，玄奘在克什米尔和南部学习过他的著作，对他很熟悉..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.63089794327192,
+          16.512960126288785
+        ]
+      },
+      "properties": {
+        "id": 56,
+        "name": "Dhanakataka (Bezwada)",
+        "description": "玄奘于公元639年抵达Dhanakataka，即现代的Bezwada，在整个雨季期间与追随龙树哲学的3000名僧侣一起学习。玄奘注意到，尽管有大量寺院，但只有二十..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.35653628578851,
+          16.57581962757656
+        ]
+      },
+      "properties": {
+        "id": 57,
+        "name": "Amaravati Stupa",
+        "description": "阿马拉瓦蒂佛塔由阿育王皇帝于公元200年完工，包含描绘佛陀一生的精细雕刻。最初它高95英尺，由砖块建成，有一个圆形圆顶和四个突出的平台。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.69971689603798,
+          12.832556775244996
+        ]
+      },
+      "properties": {
+        "id": 58,
+        "name": "甘吉布勒姆",
+        "description": "玄奘于公元640年抵达甘吉布勒姆，达罗毗荼的首都，泰米尔人的土地，并在整个雨季期间停留。玄奘渴望访问甘吉布勒姆，因为它是法护菩萨的故乡，戒贤大师的老师，玄奘..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7811756289455,
+          20.001903299600105
+        ]
+      },
+      "properties": {
+        "id": 59,
+        "name": "Nasik",
+        "description": "纳西克是强大的战士君主Pulakesin II的首都。这位国王以强迫战败的将军穿女装而闻名。这些将军通常宁愿自杀也不愿遭受这种羞辱。国王还..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.75013181504183,
+          20.53162082239947
+        ]
+      },
+      "properties": {
+        "id": 60,
+        "name": "阿旃陀",
+        "description": "距离阿旃陀村约三公里处，有29个洞穴组成的宏伟寺院建筑群，开凿在海拔35至110英尺的马蹄形悬崖上。该建筑群是重要的仪式中心和朝圣学习之地..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.96363775337548,
+          21.72123091782142
+        ]
+      },
+      "properties": {
+        "id": 61,
+        "name": "Bharukaccha (Bharuch)",
+        "description": "玄奘沿着古代贸易路线从阿旃陀前往Bharukaccha，然后向北前往马尔瓦。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.77275114536522,
+          22.383967620488136
+        ]
+      },
+      "properties": {
+        "id": 62,
+        "name": "Malva",
+        "description": "（大致位置）<br>玄奘在前往卡提阿瓦半岛的途中访问了马尔瓦。他注意到那里有数百座寺院，有超过20000名小乘佛教徒。玄奘在文化和文明方面将其与摩揭陀进行了比较..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.01562488981602,
+          21.876792382800925
+        ]
+      },
+      "properties": {
+        "id": 63,
+        "name": "The Kathiawar Peninsula",
+        "description": "（大致位置）<br>玄奘在卡提阿瓦半岛只发现了两三座寺院和几百名僧侣。在他的编年史中，他详细描述了黄金、白银、铜、水晶、珍珠和其他珍贵物品的贸易主导地位..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.46632224433549,
+          30.19113421707307
+        ]
+      },
+      "properties": {
+        "id": 64,
+        "name": "木尔坦",
+        "description": "向北行进时，玄奘抵达木尔坦。木尔坦人向众神献祭，崇拜太阳神苏利耶。玄奘参观了著名的太阳神庙，并惊叹于其黄金雕像和稀有...的美丽装饰。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.91027799118062,
+          32.95797669924448
+        ]
+      },
+      "properties": {
+        "id": 65,
+        "name": "Parvata",
+        "description": "（大致位置）<br>玄奘在Parvata地区停留了两个月，然后于公元642年返回那烂陀。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.46230344326334,
+          25.274192851059123
+        ]
+      },
+      "properties": {
+        "id": 66,
+        "name": "Near Nalanda",
+        "description": "（大致位置）<br>在返回那烂陀之前，玄奘在城市外学习了两个月。首先，他与一位杰出的哲学家一起学习语法和逻辑，然后与学者Jayasena一起，试图阐明模糊的宗派..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.51732076284691,
+          25.310123117897927
+        ]
+      },
+      "properties": {
+        "id": 67,
+        "name": "Nalanda (Return visit)",
+        "description": "回到那烂陀后，玄奘与他敬爱的朋友戒贤大师重聚。玄奘在那烂陀寺院度过了短暂的时间，进行讲座和参与宗教辩论。他还写了《破邪论》，抨击..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.75197558520392,
+          26.185711113212008
+        ]
+      },
+      "properties": {
+        "id": 68,
+        "name": "Gauhati",
+        "description": "玄奘受到阿萨姆国王首都的热烈欢迎。国王对他的到来感到如此荣幸，尽管是印度教徒，但他成为了佛教社区的俗家成员。玄奘作为国王的客人度过了两个月，他的停留被...打断。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.82866123762771,
+          25.44459184621523
+        ]
+      },
+      "properties": {
+        "id": 69,
+        "name": "Prayaga (Allahabad)",
+        "description": "戒日王以对宗教领袖的尊敬而闻名，他拜倒在玄奘脚下，撒花并吟诵长篇赞美诗。在阅读了玄奘在那烂陀创作的《破邪论》后，戒日王..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.91652528989042,
+          27.05706198295282
+        ]
+      },
+      "properties": {
+        "id": 70,
+        "name": "Kanyakubja (Kanauji)",
+        "description": "在Kanyakubja举行的为期五天的宗教辩论由戒日王组织，使几年前迦毕试国王举行的辩论显得规模很小。玄奘注意到有十八个属国的国王、3000名佛教僧侣和3..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.57932884184143,
+          31.329006368246834
+        ]
+      },
+      "properties": {
+        "id": 71,
+        "name": "Jalandhara",
+        "description": "在贾朗达尔，玄奘的商队加入了100名寻求安全的僧侣，一起穿越以强盗闻名的地区。作为预防措施，玄奘还派一名僧侣走在商队前面，通过说...来请求安全通行。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.79626814119145,
+          33.73497637463743
+        ]
+      },
+      "properties": {
+        "id": 72,
+        "name": "塔克西拉",
+        "description": "玄奘继续向西北前往Hund的旅程。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.42719710329014,
+          34.01240026682459
+        ]
+      },
+      "properties": {
+        "id": 73,
+        "name": "Hund",
+        "description": "在他出巡旅程中安全横渡印度河，但这次河流并不那么仁慈。在半途，一场风暴掀翻了一艘船，导致丢失了五十本珍贵的经文和玄奘..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.98333281891475,
+          35.783332739346534
+        ]
+      },
+      "properties": {
+        "id": 74,
+        "name": "Andarab",
+        "description": "迦毕试国王为玄奘提供了一名向导和100名搬运工，帮助安全运输物资穿越兴都库什山脉。然而，在海拔13200英尺的开伯尔山口，许多搬运工已经返回，只剩下一个小商队..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.86221942303631,
+          36.74225433573572
+        ]
+      },
+      "properties": {
+        "id": 75,
+        "name": "Kunduz",
+        "description": "玄奘和他的队伍在昆都士休息了一个月，等待早些时候在印度河中丢失的一些重要经文。在Kuduz统治者提供的护卫下，队伍继续前进，这次向东前往喀什..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.51351515494865,
+          37.147593262945314
+        ]
+      },
+      "properties": {
+        "id": 76,
+        "name": "Feyzabad",
+        "description": "由于帕米尔山口的积雪阻塞，玄奘被迫在Feyzabad等待一个月。一旦天气好转，玄奘和他的队伍继续向东前往塔什库尔干。穿越帕米尔的道路极其危险。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.20570424376427,
+          37.81946876015287
+        ]
+      },
+      "properties": {
+        "id": 77,
+        "name": "Tashkurghan (Taxkorgan)",
+        "description": "玄奘与塔吉克人在塔什库尔干休息了一个月。他参观了一座与僧侣鸠摩罗什有关的寺院，鸠摩罗什是大乘佛教杰出的翻译家，玄奘早些时候在K...参观过他的出生地。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.99379444600147,
+          39.46769003955825
+        ]
+      },
+      "properties": {
+        "id": 78,
+        "name": "Kashgar (Kashi)",
+        "description": "在喀什，玄奘发现了数百座佛教寺院和数千名小乘佛教现实主义僧侣。他还补充了补给，然后开始了为期两周的南方丝绸之路旅程，前往和田绿洲。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.76409016930695,
+          37.23080684406502
+        ]
+      },
+      "properties": {
+        "id": 79,
+        "name": "Khotan (Hotan)",
+        "description": "公元644年9月，玄奘在国王亲自护送下进入和田。尽管住在小乘佛教寺院，但和田的100座寺院和5000名僧侣大多是大乘佛教信徒，他们皈依大乘佛教被归因于..."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.77700370005186,
+          37.138766943993396
+        ]
+      },
+      "properties": {
+        "id": 80,
+        "name": "Niya (Jingjue)",
+        "description": "穿越无情的沙漠向东行进，玄奘到达尼雅，然后继续前往且末。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.51921800472724,
+          38.13096973377753
+        ]
+      },
+      "properties": {
+        "id": 81,
+        "name": "Cherchen (Qiemo)",
+        "description": "补充补给后，玄奘继续沿着南方丝绸之路前往若羌。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.1689633273036,
+          39.01922526199901
+        ]
+      },
+      "properties": {
+        "id": 82,
+        "name": "Charkhlik (Ruoqiang)",
+        "description": "从若羌出发，玄奘的商队转向北方，前往楼兰绿洲。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.36254864011701,
+          40.09488222508123
+        ]
+      },
+      "properties": {
+        "id": 83,
+        "name": "Loulan",
+        "description": "（大致位置）<br>玄奘以到达楼兰结束了他的旅行记录；无疑认为最后几段旅程是在中华帝国境内。玄奘完成了他的编年史：<br>\"我已经详细阐述了...\"。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.66335343768597,
+          40.13727976672528
+        ]
+      },
+      "properties": {
+        "id": 84,
+        "name": "Tan-huang (Dunhuang)",
+        "description": "我们从玄奘传记作者的记录中得知，他在敦煌稍作停留，然后短途前往安西，重新加入他16年前前往长安的路线。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.79443029691585,
+          40.49552581873339
+        ]
+      },
+      "properties": {
+        "id": 85,
+        "name": "安西（安西）",
+        "description": "从安西出发，玄奘继续重走他的足迹，沿着戈壁沙漠南缘前往凉州。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.63779613229097,
+          37.92415931521303
+        ]
+      },
+      "properties": {
+        "id": 86,
+        "name": "凉州（武威）",
+        "description": "玄奘继续前往他在长安的最终目的地。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.94283305885325,
+          34.25317265854614
+        ]
+      },
+      "properties": {
+        "id": 87,
+        "name": "长安（西安）",
+        "description": "公元645年1月7日，玄奘的旅程终于结束，他进入了唐朝首都长安。他学习佛教教义源头的愿望使他踏上了一段历时16年、19000英里的史诗般朝圣之旅，穿越了世界上最危险的..."
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "accentColor": "#3b7846",
   "monospaceFontFamily": "CommitMono Nerd Font Mono",
   "nativeMenus": false,
-  "theme": "obsidian",
+  "theme": "moonstone",
   "cssTheme": "Things",
   "enabledCssSnippets": [
     "Split-Page-Callout",

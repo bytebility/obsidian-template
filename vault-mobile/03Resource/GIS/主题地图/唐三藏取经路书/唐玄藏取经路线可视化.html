@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唐玄藏取经路线可视化</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #8B4513, #D2691E);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 120px);
+            gap: 20px;
+            padding: 20px;
+        }
+        .map-container {
+            flex: 1;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        .info-panel {
+            width: 350px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .info-panel h3 {
+            color: #8B4513;
+            border-bottom: 2px solid #D2691E;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .route-info {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .route-info h4 {
+            color: #8B4513;
+            margin-top: 0;
+        }
+        .location-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .location-item {
+            padding: 10px;
+            border-left: 3px solid #D2691E;
+            margin-bottom: 10px;
+            background: #fafafa;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .location-item:hover {
+            background: #f0f0f0;
+            border-left-color: #8B4513;
+            transform: translateX(5px);
+        }
+        .location-item.active {
+            background: #e8f4f8;
+            border-left-color: #2196F3;
+        }
+        .location-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .location-coords {
+            font-size: 0.9em;
+            color: #666;
+            font-family: monospace;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        .btn {
+            background: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #D2691E;
+        }
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .animation-progress {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: none;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #8B4513, #D2691E);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        .legend {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 3px;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+        .route-line { background: #FF6B6B; }
+        .start-point { background: #4CAF50; }
+        .end-point { background: #2196F3; }
+        .way-point { background: #FF9800; }
+        .animation-marker { background: #E91E63; }
+
+        /* 浮动进度显示面板 */
+        .floating-progress-panel {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(139, 69, 19, 0.95);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            min-width: 300px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            display: none;
+        }
+
+        .progress-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #FFD700;
+        }
+
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .progress-stat {
+            flex: 1;
+            text-align: center;
+            padding: 0 5px;
+        }
+
+        .progress-stat .label {
+            font-size: 11px;
+            opacity: 0.8;
+            margin-bottom: 2px;
+        }
+
+        .progress-stat .value {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .progress-bar-large {
+            width: 100%;
+            height: 8px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .progress-fill-large {
+            height: 100%;
+            background: linear-gradient(90deg, #FFD700, #FFA500);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .current-location {
+            font-size: 12px;
+            margin-top: 8px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- 浮动进度显示面板 -->
+    <div class="floating-progress-panel" id="floatingProgressPanel">
+        <div class="progress-title">🚶‍♂️ 取经进度</div>
+        <div class="progress-stats">
+            <div class="progress-stat">
+                <div class="label">已完成</div>
+                <div class="value" id="completedDistance">0 km</div>
+            </div>
+            <div class="progress-stat">
+                <div class="label">总路程</div>
+                <div class="value" id="totalDistanceDisplay">0 km</div>
+            </div>
+            <div class="progress-stat">
+                <div class="label">剩余</div>
+                <div class="value" id="remainingDistance">0 km</div>
+            </div>
+        </div>
+        <div class="progress-bar-large">
+            <div class="progress-fill-large" id="progressFillLarge"></div>
+        </div>
+        <div class="progress-text" id="progressTextLarge">0%</div>
+        <div class="current-location" id="currentLocationText">准备出发...</div>
+    </div>
+
+    <div class="header">
+        <h1>唐玄藏取经路线</h1>
+        <p>从长安到天竺 - 历时17年的西行取经之旅</p>
+    </div>
+
+    <div class="container">
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="animation-progress" id="animationProgress">
+                <div><strong>动画进度</strong></div>
+                <div id="currentLocation">
+                    <div style="font-size: 12px;">
+                        <div><strong>当前位置:</strong> 等待开始...</div>
+                        <div style="margin-top: 3px; color: #666;">
+                            <strong>总路程:</strong> <span id="totalDistance">计算中...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">0%</div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>路线信息</h3>
+            <div class="route-info">
+                <h4>取经路线概况</h4>
+                <p><strong>起点：</strong>长安 (今西安)</p>
+                <p><strong>终点：</strong>天竺 (印度)</p>
+                <p><strong>时间：</strong>629-645年</p>
+                <p><strong>历时：</strong>17年</p>
+                <p><strong>里程：</strong>约5万公里</p>
+            </div>
+
+            <div class="controls">
+                <button class="btn" id="showRouteBtn" onclick="showFullRoute()">显示完整路线</button>
+                <button class="btn" id="resetBtn" onclick="resetView()">重置视图</button>
+                <button class="btn" id="animationBtn" onclick="toggleAnimation()">开始动画</button>
+            </div>
+            <div class="speed-control">
+                <label for="speedSlider">动画速度：</label>
+                <input type="range" id="speedSlider" min="1" max="10" value="3">
+                <div class="speed-value" id="speedValue">中等</div>
+            </div>
+
+            <h3>主要地点</h3>
+            <div class="location-list" id="locationList">
+                <!-- 地点列表将通过JavaScript动态生成 -->
+            </div>
+
+            <div class="legend">
+                <h4>图例</h4>
+                <div class="legend-item">
+                    <div class="legend-color route-line"></div>
+                    <span>取经路线</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color start-point"></div>
+                    <span>起点 (长安)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color end-point"></div>
+                    <span>终点 (天竺)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color way-point"></div>
+                    <span>途经地点</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color animation-marker"></div>
+                    <span>动画标记</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化地图
+        const map = L.map('map').setView([35.0, 80.0], 4);
+
+        // 添加地图图层
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // 存储路线和标记的变量
+        let routeLayers = []; // 存储多个路线图层
+        let pointLayer = null;
+        let markers = [];
+        let animationMarker = null;
+        let isAnimating = false;
+        let routeSegments = []; // 存储多个路线段的坐标数组
+        let routeCoordinates = []; // 合并后的所有路线坐标（用于动画）
+        let keyLocations = [];
+        let currentAnimationIndex = 0;
+        let animationInterval = null;
+        let animationSpeed = 3; // 动画速度 (1-10)
+        let autoResetOnComplete = true; // 动画完成后自动重置
+        let totalRouteDistance = 0; // 路线总长度（公里）
+
+        // 加载geojson数据
+        async function loadGeoJSONFiles() {
+            try {
+                // 显示加载状态
+                const loadingIndicator = document.createElement('div');
+                loadingIndicator.innerHTML = `
+                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                background: rgba(139, 69, 19, 0.9); color: white; padding: 20px;
+                                border-radius: 10px; text-align: center; z-index: 1000;">
+                        <div style="font-size: 24px; margin-bottom: 10px;">📜</div>
+                        <div>正在加载取经路线数据...</div>
+                        <div style="margin-top: 10px; width: 200px; height: 4px; background: rgba(255,255,255,0.3);
+                                    border-radius: 2px; overflow: hidden;">
+                            <div style="width: 0%; height: 100%; background: white; transition: width 0.3s;"
+                                 id="loadingProgress"></div>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(loadingIndicator);
+
+                // 模拟加载进度
+                let progress = 0;
+                const progressBar = loadingIndicator.querySelector('#loadingProgress');
+                const progressInterval = setInterval(() => {
+                    progress += Math.random() * 15;
+                    if (progress >= 90) {
+                        progress = 90;
+                        clearInterval(progressInterval);
+                    }
+                    progressBar.style.width = progress + '%';
+                }, 200);
+
+                // 加载路线数据
+                const routeResponse = await fetch('唐三藏取经路线.geojson');
+                if (!routeResponse.ok) throw new Error('路线数据加载失败');
+                const routeData = await routeResponse.json();
+
+                // 加载途经点数据
+                const pointResponse = await fetch('唐三藏取经途经点.geojson');
+                if (!pointResponse.ok) throw new Error('途经点数据加载失败');
+                const pointData = await pointResponse.json();
+
+                // 完成进度
+                clearInterval(progressInterval);
+                progressBar.style.width = '100%';
+
+                // 延迟移除加载指示器
+                setTimeout(() => {
+                    loadingIndicator.remove();
+                    // 处理路线数据
+                    processRouteData(routeData);
+                    // 处理途经点数据
+                    processPointData(pointData);
+                    // 添加到地图
+                    addDataToMap();
+
+                    // 显示总距离
+                    if (totalRouteDistance > 0) {
+                        document.getElementById('totalDistance').textContent = `${totalRouteDistance.toFixed(1)} 公里`;
+                    }
+                }, 500);
+
+            } catch (error) {
+                console.error('加载GeoJSON数据失败:', error);
+
+                // 移除加载指示器
+                const loadingIndicator = document.querySelector('div[style*="正在加载"]');
+                if (loadingIndicator) loadingIndicator.remove();
+
+                // 显示错误消息
+                const errorMessage = document.createElement('div');
+                errorMessage.innerHTML = `
+                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                background: rgba(220, 53, 69, 0.95); color: white; padding: 20px;
+                                border-radius: 10px; text-align: center; z-index: 1000;">
+                        <div style="font-size: 24px; margin-bottom: 10px;">❌</div>
+                        <div><strong>数据加载失败</strong></div>
+                        <div style="margin-top: 10px; font-size: 14px;">${error.message}</div>
+                        <div style="margin-top: 15px; font-size: 12px; opacity: 0.8;">
+                            请确保以下文件存在且可访问：<br>
+                            • 唐三藏取经路线.geojson<br>
+                            • 唐三藏取经途经点.geojson
+                        </div>
+                        <button onclick="this.parentElement.parentElement.remove();"
+                                style="background: white; color: #dc3545; border: none;
+                                       padding: 8px 16px; border-radius: 5px; cursor: pointer; margin-top: 15px;">
+                            确定
+                        </button>
+                    </div>
+                `;
+                document.body.appendChild(errorMessage);
+            }
+        }
+
+        // 处理路线数据
+        function processRouteData(geojson) {
+            routeSegments = [];
+            routeCoordinates = [];
+
+            if (geojson.features && geojson.features.length > 0) {
+                // 按照features数组的顺序处理每个Feature
+                geojson.features.forEach((feature, featureIndex) => {
+                    if (feature.geometry && feature.geometry.type === 'LineString') {
+                        // 每个LineString独立存储为一个线段
+                        const segmentCoordinates = feature.geometry.coordinates.map(coord => [coord[1], coord[0]]);
+                        routeSegments.push({
+                            coordinates: segmentCoordinates,
+                            featureIndex: featureIndex,
+                            properties: feature.properties || {}
+                        });
+
+                        // 按照Feature的顺序添加坐标，保持原始顺序
+                        routeCoordinates.push(...segmentCoordinates);
+
+                        console.log(`Feature ${featureIndex}: ${segmentCoordinates.length} 个坐标点`);
+                    }
+                });
+
+                // 计算路线总长度
+                totalRouteDistance = calculateRouteDistance(routeCoordinates);
+                console.log(`取经路线总长度: ${totalRouteDistance.toFixed(1)} 公里`);
+                console.log(`路线包含 ${routeSegments.length} 个独立线段`);
+                console.log(`Features顺序: ${geojson.features.map((f, i) => i).join(', ')}`);
+            }
+        }
+
+        // 处理途经点数据
+        function processPointData(geojson) {
+            keyLocations = [];
+
+            if (geojson.features && geojson.features.length > 0) {
+                geojson.features.forEach((feature, index) => {
+                    if (feature.geometry && feature.geometry.type === 'Point') {
+                        const coords = feature.geometry.coordinates;
+                        const props = feature.properties || {};
+
+                        let type = 'waypoint';
+                        if (index === 0) type = 'start';
+                        if (index === geojson.features.length - 1) type = 'end';
+
+                        keyLocations.push({
+                            name: props.name || `地点${index + 1}`,
+                            lat: coords[1],
+                            lng: coords[0],
+                            type: type,
+                            description: props.description || '',
+                            id: props.id || index
+                        });
+                    }
+                });
+            }
+        }
+
+        // 添加数据到地图
+        function addDataToMap() {
+            // 清空之前的路线图层
+            routeLayers.forEach(layer => map.removeLayer(layer));
+            routeLayers = [];
+
+            // 添加路线 - 每个LineString独立绘制，按照features顺序
+            if (routeSegments.length > 0) {
+                let allBounds = [];
+
+                // 按照featureIndex排序，确保按照GeoJSON features的顺序显示
+                routeSegments.sort((a, b) => a.featureIndex - b.featureIndex);
+
+                routeSegments.forEach((segmentData, index) => {
+                    const routeLayer = L.polyline(segmentData.coordinates, {
+                        color: '#FF6B6B',
+                        weight: 3,
+                        opacity: 0.8
+                    }).addTo(map);
+
+                    // 添加popup显示Feature信息
+                    routeLayer.bindPopup(`
+                        <div style="min-width: 200px;">
+                            <h4 style="margin: 0 0 10px 0; color: #8B4513;">路线段 ${segmentData.featureIndex + 1}</h4>
+                            <p style="margin: 0 0 10px 0; font-size: 0.9em;">
+                                坐标点数量: ${segmentData.coordinates.length}<br>
+                                Feature索引: ${segmentData.featureIndex}
+                            </p>
+                        </div>
+                    `);
+
+                    routeLayers.push(routeLayer);
+                    allBounds.push(routeLayer.getBounds());
+                });
+
+                // 调整地图视图以适应所有路线
+                if (allBounds.length > 0) {
+                    const bounds = L.latLngBounds(allBounds);
+                    map.fitBounds(bounds, { padding: [20, 20] });
+                }
+            }
+
+            // 添加途经点标记
+            addLocationMarkers();
+
+            // 生成地点列表
+            generateLocationList();
+        }
+
+        // 添加地点标记
+        function addLocationMarkers() {
+            keyLocations.forEach((location, index) => {
+                let color = '#FF9800'; // 默认橙色
+                if (location.type === 'start') color = '#4CAF50'; // 绿色
+                if (location.type === 'end') color = '#2196F3'; // 蓝色
+
+                const icon = L.divIcon({
+                    className: 'custom-marker',
+                    html: `<div style="background: ${color}; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>`,
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8]
+                });
+
+                const marker = L.marker([location.lat, location.lng], { icon })
+                    .addTo(map)
+                    .bindPopup(`
+                        <div style="min-width: 250px;">
+                            <h4 style="margin: 0 0 10px 0; color: #8B4513;">${location.name}</h4>
+                            <p style="margin: 0 0 10px 0; font-size: 0.9em;">${location.description}</p>
+                            <p style="margin: 0 0 10px 0; font-size: 0.8em; color: #666;">
+                                坐标: ${location.lat.toFixed(4)}, ${location.lng.toFixed(4)}
+                            </p>
+                            <div style="display: flex; gap: 5px;">
+                                <button onclick="map.setView([${location.lat}, ${location.lng}], 10); map.closePopup();"
+                                        style="background: #8B4513; color: white; border: none;
+                                               padding: 4px 8px; border-radius: 3px; cursor: pointer; font-size: 0.8em;">
+                                    定位到此
+                                </button>
+                                <button onclick="startAnimationFromIndex(${index})"
+                                        style="background: #D2691E; color: white; border: none;
+                                               padding: 4px 8px; border-radius: 3px; cursor: pointer; font-size: 0.8em;">
+                                    从此开始动画
+                                </button>
+                            </div>
+                        </div>
+                    `);
+
+                markers.push(marker);
+            });
+        }
+
+        // 生成地点列表
+        function generateLocationList() {
+            const listContainer = document.getElementById('locationList');
+            listContainer.innerHTML = '';
+
+            keyLocations.forEach((location, index) => {
+                const item = document.createElement('div');
+                item.className = 'location-item';
+                item.innerHTML = `
+                    <div class="location-name">${location.name}</div>
+                    <div class="location-coords">${location.lat.toFixed(4)}, ${location.lng.toFixed(4)}</div>
+                `;
+
+                item.addEventListener('click', () => {
+                    // 移除其他活动状态
+                    document.querySelectorAll('.location-item').forEach(el => el.classList.remove('active'));
+                    item.classList.add('active');
+
+                    // 移动地图到该地点
+                    map.setView([location.lat, location.lng], 8);
+                    markers[index].openPopup();
+                });
+
+                listContainer.appendChild(item);
+            });
+        }
+
+        // 显示完整路线
+        function showFullRoute() {
+            if (routeLayers.length > 0) {
+                let allBounds = routeLayers.map(layer => layer.getBounds());
+                const bounds = L.latLngBounds(allBounds);
+                map.fitBounds(bounds, { padding: [20, 20] });
+            }
+        }
+
+        // 重置视图
+        function resetView() {
+            if (routeLayers.length > 0) {
+                let allBounds = routeLayers.map(layer => layer.getBounds());
+                const bounds = L.latLngBounds(allBounds);
+                map.fitBounds(bounds, { padding: [20, 20] });
+            } else {
+                map.setView([35.0, 80.0], 4);
+            }
+        }
+
+        // 切换动画
+        function toggleAnimation() {
+            if (isAnimating) {
+                stopAnimation();
+            } else {
+                startAnimation();
+            }
+        }
+
+        // 开始动画
+        function startAnimation() {
+            if (routeCoordinates.length === 0) {
+                alert('路线数据尚未加载完成');
+                return;
+            }
+
+            isAnimating = true;
+            const button = document.getElementById('animationBtn');
+            button.textContent = '停止动画';
+            button.style.background = '#f44336';
+
+            // 显示进度条
+            document.getElementById('animationProgress').style.display = 'block';
+
+            // 显示浮动进度面板
+            const floatingPanel = document.getElementById('floatingProgressPanel');
+            floatingPanel.style.display = 'block';
+
+            // 更新总路程显示
+            document.getElementById('totalDistanceDisplay').textContent = totalRouteDistance.toFixed(1) + ' km';
+
+            // 创建动画标记
+            const icon = L.divIcon({
+                className: 'animation-marker',
+                html: '<div style="background: #E91E63; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 8px rgba(0,0,0,0.4);"></div>',
+                iconSize: [22, 22],
+                iconAnchor: [11, 11]
+            });
+
+            // 确保从途经点id=0（长安）开始
+            let startIndex = 0;
+            if (keyLocations.length > 0) {
+                // 查找id=0的途经点
+                const startPoint = keyLocations.find(location => location.id === 0);
+                if (startPoint) {
+                    // 找到距离长安最近的路线点作为起始点
+                    let minDistance = Infinity;
+                    for (let i = 0; i < routeCoordinates.length; i++) {
+                        const routeCoord = routeCoordinates[i];
+                        const distance = calculateDistance(
+                            routeCoord[0], routeCoord[1],
+                            startPoint.lat, startPoint.lng
+                        );
+                        if (distance < minDistance) {
+                            minDistance = distance;
+                            startIndex = i;
+                        }
+                    }
+                    console.log(`动画将从途经点id=0（长安）开始，路线索引: ${startIndex}`);
+                }
+            }
+
+            animationMarker = L.marker(routeCoordinates[startIndex], { icon }).addTo(map);
+            currentAnimationIndex = startIndex;
+
+            // 开始动画循环
+            animateMarker();
+        }
+
+        // 动画循环
+        function animateMarker() {
+            if (!isAnimating || !animationMarker) return;
+
+            if (currentAnimationIndex >= routeCoordinates.length - 1) {
+                // 动画结束
+                stopAnimation();
+
+                // 显示完成消息
+                const completionMessage = document.createElement('div');
+                completionMessage.innerHTML = `
+                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                background: rgba(139, 69, 19, 0.95); color: white; padding: 20px;
+                                border-radius: 10px; text-align: center; z-index: 1000;
+                                box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                        <h3>🎉 取经之旅完成！</h3>
+                        <p>玄奘法师历经17年，终于抵达天竺取得真经</p>
+                        <p style="font-size: 0.9em; opacity: 0.8;">已按照GeoJSON features顺序完成所有路线段</p>
+                        <button onclick="this.parentElement.parentElement.remove();"
+                                style="background: white; color: #8B4513; border: none;
+                                       padding: 8px 16px; border-radius: 5px; cursor: pointer;">关闭</button>
+                    </div>
+                `;
+                document.body.appendChild(completionMessage);
+
+                // 3秒后自动移除消息
+                setTimeout(() => {
+                    if (completionMessage.parentElement) {
+                        completionMessage.remove();
+                    }
+                }, 3000);
+
+                // 如果启用了自动重置，延迟后重置视图
+                if (autoResetOnComplete) {
+                    setTimeout(() => {
+                        resetView();
+                    }, 2000);
+                }
+                return;
+            }
+
+            // 移动标记
+            animationMarker.setLatLng(routeCoordinates[currentAnimationIndex]);
+
+            // 更新进度和详细信息
+            const progress = getAnimationProgress();
+            const completedDistance = getCompletedDistance();
+            const remainingDistance = totalRouteDistance - completedDistance;
+
+            document.getElementById('progressFill').style.width = progress + '%';
+
+            // 更新浮动进度面板
+            document.getElementById('progressFillLarge').style.width = progress + '%';
+            document.getElementById('progressTextLarge').textContent = progress.toFixed(1) + '%';
+            document.getElementById('completedDistance').textContent = completedDistance.toFixed(1) + ' km';
+            document.getElementById('remainingDistance').textContent = remainingDistance.toFixed(1) + ' km';
+
+            // 更新当前位置信息
+            updateCurrentLocation();
+
+            // 获取当前所在的Feature段信息
+            let currentFeatureIndex = 0;
+            let currentFeatureProgress = 0;
+            let accumulatedPoints = 0;
+
+            for (let i = 0; i < routeSegments.length; i++) {
+                if (currentAnimationIndex < accumulatedPoints + routeSegments[i].coordinates.length) {
+                    currentFeatureIndex = i;
+                    currentFeatureProgress = ((currentAnimationIndex - accumulatedPoints) / routeSegments[i].coordinates.length) * 100;
+                    break;
+                }
+                accumulatedPoints += routeSegments[i].coordinates.length;
+            }
+
+            // 在进度条区域显示更详细的信息
+            const currentCoord = routeCoordinates[currentAnimationIndex];
+            document.getElementById('currentLocation').innerHTML = `
+                <div style="font-size: 12px;">
+                    <div><strong>当前位置:</strong> ${currentCoord[1].toFixed(4)}, ${currentCoord[0].toFixed(4)}</div>
+                    <div style="margin-top: 3px;">
+                        <strong>进度:</strong> ${completedDistance.toFixed(1)}km / ${totalRouteDistance.toFixed(1)}km
+                        <span style="color: #666;">(剩余 ${remainingDistance.toFixed(1)}km)</span>
+                    </div>
+                    <div style="margin-top: 3px; color: #666; font-size: 0.9em;">
+                        <strong>当前路线段:</strong> Feature ${currentFeatureIndex + 1} (${currentFeatureProgress.toFixed(1)}%)
+                    </div>
+                </div>
+            `;
+
+            // 移动地图视角
+            if (currentAnimationIndex % 50 === 0) { // 每50个点调整一次视角
+                map.setView(routeCoordinates[currentAnimationIndex], map.getZoom());
+            }
+
+            currentAnimationIndex += animationSpeed; // 根据速度调整步长
+
+            // 继续动画
+            if (isAnimating) {
+                const delay = Math.max(50, 200 - (animationSpeed * 20)); // 速度越快，延迟越短
+                setTimeout(animateMarker, delay);
+            }
+        }
+
+        // 更新当前位置信息
+        function updateCurrentLocation() {
+            if (currentAnimationIndex >= routeCoordinates.length || keyLocations.length === 0) return;
+
+            const currentCoord = routeCoordinates[currentAnimationIndex];
+            let nearestLocation = keyLocations[0];
+            let minDistance = calculateDistance(currentCoord[0], currentCoord[1], keyLocations[0].lat, keyLocations[0].lng);
+
+            // 找到最近的已知地点
+            for (let i = 1; i < keyLocations.length; i++) {
+                const distance = calculateDistance(currentCoord[0], currentCoord[1], keyLocations[i].lat, keyLocations[i].lng);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    nearestLocation = keyLocations[i];
+                }
+            }
+
+            const locationText = minDistance < 1 ? `当前：${nearestLocation.name}` : `附近：${nearestLocation.name}`;
+            document.getElementById('currentLocation').textContent = locationText;
+
+            // 更新浮动面板中的当前位置
+            document.getElementById('currentLocationText').textContent = locationText;
+        }
+
+        // 计算两点间距离（简化版）
+        function calculateDistance(lat1, lng1, lat2, lng2) {
+            const R = 6371; // 地球半径（公里）
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLng = (lng2 - lng1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                    Math.sin(dLng/2) * Math.sin(dLng/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
+        // 停止动画
+        function stopAnimation() {
+            isAnimating = false;
+            const button = document.getElementById('animationBtn');
+            button.textContent = '开始动画';
+            button.style.background = '#8B4513';
+
+            // 隐藏进度条
+            document.getElementById('animationProgress').style.display = 'none';
+
+            // 隐藏浮动进度面板
+            document.getElementById('floatingProgressPanel').style.display = 'none';
+
+            if (animationMarker) {
+                map.removeLayer(animationMarker);
+                animationMarker = null;
+            }
+
+            currentAnimationIndex = 0;
+        }
+
+        // 辅助函数：飞到指定位置
+        function flyToLocation(lat, lng) {
+            map.flyTo([lat, lng], 10, {
+                animate: true,
+                duration: 1.5
+            });
+        }
+
+        // 辅助函数：计算路线距离（使用Haversine公式）
+        function calculateRouteDistance(coordinates) {
+            let totalDistance = 0;
+
+            for (let i = 0; i < coordinates.length - 1; i++) {
+                const [lng1, lat1] = coordinates[i];
+                const [lng2, lat2] = coordinates[i + 1];
+
+                // Haversine公式计算两点间距离
+                const R = 6371; // 地球半径（公里）
+                const dLat = (lat2 - lat1) * Math.PI / 180;
+                const dLng = (lng2 - lng1) * Math.PI / 180;
+                const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                          Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                          Math.sin(dLng/2) * Math.sin(dLng/2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                const distance = R * c;
+
+                totalDistance += distance;
+            }
+
+            return totalDistance;
+        }
+
+        // 辅助函数：获取当前动画进度
+        function getAnimationProgress() {
+            if (!routeCoordinates || routeCoordinates.length === 0) return 0;
+            return (currentAnimationIndex / (routeCoordinates.length - 1)) * 100;
+        }
+
+        // 辅助函数：获取已完成的距离
+        function getCompletedDistance() {
+            if (!routeCoordinates || routeCoordinates.length === 0 || currentAnimationIndex === 0) return 0;
+
+            let completedDistance = 0;
+            for (let i = 0; i < Math.min(currentAnimationIndex, routeCoordinates.length - 1); i++) {
+                const [lng1, lat1] = routeCoordinates[i];
+                const [lng2, lat2] = routeCoordinates[i + 1];
+
+                // Haversine公式
+                const R = 6371;
+                const dLat = (lat2 - lat1) * Math.PI / 180;
+                const dLng = (lng2 - lng1) * Math.PI / 180;
+                const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                          Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                          Math.sin(dLng/2) * Math.sin(dLng/2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                const distance = R * c;
+
+                completedDistance += distance;
+            }
+
+            return completedDistance;
+        }
+
+        // 辅助函数：从指定索引开始动画
+        function startAnimationFromIndex(index) {
+            if (!routeCoordinates || routeCoordinates.length === 0) {
+                alert('路线数据尚未加载完成');
+                return;
+            }
+
+            if (index < 0 || index >= waypointsData.features.length) {
+                alert('无效的地点索引');
+                return;
+            }
+
+            const feature = waypointsData.features[index];
+            const coords = feature.geometry.coordinates;
+
+            // 找到最近的路线点
+            let nearestIndex = 0;
+            let minDistance = Infinity;
+
+            for (let i = 0; i < routeCoordinates.length; i++) {
+                const routeCoord = routeCoordinates[i];
+                const distance = Math.sqrt(
+                    Math.pow(routeCoord[0] - coords[0], 2) +
+                    Math.pow(routeCoord[1] - coords[1], 2)
+                );
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    nearestIndex = i;
+                }
+            }
+
+            // 停止当前动画
+            stopAnimation();
+
+            // 设置动画起始点
+            currentAnimationIndex = nearestIndex;
+
+            // 移动到该位置
+            flyToLocation(coords[1], coords[0]);
+
+            // 开始动画
+            setTimeout(() => {
+                startAnimation();
+            }, 1500);
+        }
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            loadGeoJSONFiles();
+
+            // 设置速度滑块事件监听
+            const speedSlider = document.getElementById('speedSlider');
+            const speedValue = document.getElementById('speedValue');
+
+            speedSlider.addEventListener('input', (e) => {
+                animationSpeed = parseInt(e.target.value);
+                const speedTexts = ['很慢', '慢', '较慢', '中等', '较快', '快', '很快', '非常快', '极快', '最快'];
+                speedValue.textContent = speedTexts[animationSpeed - 1] || '中等';
+            });
+
+            // 初始化速度显示
+            speedSlider.dispatchEvent(new Event('input'));
+        });
+
+        // 添加自定义样式
+        const style = document.createElement('style');
+        style.textContent = `
+            .custom-marker {
+                background: transparent !important;
+                border: none !important;
+            }
+            .leaflet-popup-content-wrapper {
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            }
+            .leaflet-popup-tip {
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

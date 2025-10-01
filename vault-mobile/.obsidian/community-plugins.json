@@ -9,7 +9,6 @@
   "tasks-calendar-wrapper",
   "templater-obsidian",
   "various-complements",
-  "obsidian-linter",
   "image-converter",
   "obsidian-git",
   "folder-notes",
@@ -28,5 +27,7 @@
   "ravenhogwarts-toolkit",
   "yearly-glance",
   "ace-code-editor",
-  "obsidian-memos"
+  "obsidian-memos",
+  "obsidian-chinese-map-view",
+  "obsidian-linter"
 ]

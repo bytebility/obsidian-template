@@ -78,6 +78,7 @@
     "excalidraw-open-md": "checkbox",
     "draft": "checkbox",
     "related": "multitext",
-    "created": "datetime"
+    "created": "datetime",
+    "location": "multitext"
   }
 }
