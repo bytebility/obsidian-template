@@ -10,7 +10,7 @@
           {
             "id": "93f35edf851743e0",
             "type": "tabs",
-            "dimension": 58.4280303030303,
+            "dimension": 61.13989637305699,
             "children": [
               {
                 "id": "c5cb75d852567bc4",
@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Diary/2025/2025-07-17.md",
+                    "file": "03Resource/GIS/杭州爬山路线.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,7 +33,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "2025-07-17"
+                  "title": "杭州爬山路线"
                 }
               }
             ]
@@ -41,7 +41,7 @@
           {
             "id": "78857c6ae5117adf",
             "type": "split",
-            "dimension": 41.571969696969695,
+            "dimension": 38.860103626943,
             "children": [
               {
                 "id": "8f375c63def0d216",
@@ -111,8 +111,7 @@
                       "title": "2025-07"
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "horizontal"
@@ -223,6 +222,39 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
+          },
+          {
+            "id": "e28a4f8455836ab0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03Resource/GIS/杭州爬山路线.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "杭州爬山路线 的反向链接列表"
+            }
+          },
+          {
+            "id": "50b397c3c7b47181",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03Resource/GIS/杭州爬山路线.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "杭州爬山路线 的出链列表"
+            }
           }
         ]
       },
@@ -301,7 +333,6 @@
     "hiddenItems": {
       "obsidian-chinese-map-view:Open map view": false,
       "bases:创建新数据库": false,
-      "obsidian-memos:Thino": false,
       "yearly-glance:打开年度概览": false,
       "ace-code-editor:打开css片段管理器": false,
       "obsidian42-brat:BRAT": false,
@@ -319,39 +350,33 @@
       "obsidian-git:Open Git source control": false,
       "net-clip:NetClip": false,
       "infio-copilot:打开 Infio Copilot": false,
-      "periodic-notes:Open today": false,
-      "workspaces-plus:Manage workspaces": false
+      "obsidian-memos:Thino": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "c5cb75d852567bc4",
   "lastOpenFiles": [
-    "Diary/2025/Monthly/2025-07.md",
+    "03Resource/GIS/使用 Obsidian 打造个人 GIS 系统.md",
     "Diary/2025/2025-07-17.md",
+    "Diary/2025/2025-07-31.md",
     "03Resource/GIS/杭州爬山路线.md",
     "03Resource/GIS/兴趣点/好玩的.md",
     "03Resource/GIS/兴趣点/好吃的.md",
     "03Resource/GIS/兴趣点/兴趣点.md",
-    "03Resource/GIS/使用 Obsidian 打造个人 GIS 系统.md",
-    "03Resource/GIS/兴趣点/__pycache__/坐标转换工具.cpython-310.pyc",
-    "03Resource/GIS/兴趣点/__pycache__",
-    "03Resource/GIS/兴趣点/搜索杭州地点.py",
-    "03Resource/GIS/兴趣点/坐标转换工具.py",
-    "03Resource/GIS/兴趣点.md",
-    "03Resource/GIS/兴趣点/工作经历.md",
-    "03Resource/GIS/兴趣点/家庭地址.md",
-    "03Resource/GIS/主题地图/唐三藏取经路书/唐三藏取经途经点.geojson",
-    "03Resource/GIS/主题地图/唐三藏取经路书/唐玄藏取经路线可视化.html",
+    "03Resource/GIS/兴趣点",
     "03Resource/GIS/主题地图/唐三藏取经路书/唐玄藏取经路书.md",
+    "03Resource/GIS/主题地图/唐三藏取经路书/唐玄藏取经路线可视化.html",
+    "03Resource/GIS/主题地图/唐三藏取经路书/唐三藏取经途经点.geojson",
     "03Resource/GIS/主题地图/唐三藏取经路书/唐三藏取经路线.geojson",
     "03Resource/GIS/主题地图/唐三藏取经路书",
     "03Resource/GIS/主题地图/主题地图.md",
     "03Resource/GIS/主题地图",
-    "03Resource/GIS/兴趣点",
-    "Diary/2025/2025-07-31.md",
-    "Diary/2025/2025-06-11.md",
-    "Diary/2025/2025-07-18.md",
-    "Diary/2025/2025-07-24.md",
+    "03Resource/GIS/assets/杭州爬山路线/file-20250930101517991.gpx",
+    "03Resource/GIS/assets/杭州爬山路线/file-20250929134340566.gpx",
+    "03Resource/GIS/assets/杭州爬山路线/file-20250929134340560.gpx",
+    "03Resource/GIS/assets/杭州爬山路线/file-20250929134340549.gpx",
     "Readme.md",
+    "Diary/2025/2025-07-18.md",
     "Diary/2025/2025-07-19.md",
     "Diary/2025/2025-07-27.md",
     "Diary/2025/Weekly/2025-W29.md",
@@ -361,7 +386,13 @@
     "Diary/2025/2025-07-16.md",
     "今天不错.md",
     "03Resource/工具/obsidian/template/概念笔记.md",
+    "03Resource/工具/obsidian/template/diary.md",
+    "Diary/2025/Weekly/2025-W22.md",
+    "Diary/2025/Monthly/2025-07.md",
     "assets/Readme/home.png",
+    "Diary/Diary.md",
+    "课程设计/课程设计.md",
+    "Diary/2025/asdasd.md",
     "Home/Home.canvas",
     "assets/Readme/xtool-logo.png",
     "files/xtool-logo.png",

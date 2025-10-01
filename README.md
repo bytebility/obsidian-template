@@ -4,10 +4,6 @@
 ## 目录结构
 
 ```bash
-# 安装包
-├── installer
-│   ├── android
-│   └── pc
 # obsidian库
 ├── vault-mobile：我的个人obsidian库模板
 ├── vault-rainbell：雨铃obsidian库模板

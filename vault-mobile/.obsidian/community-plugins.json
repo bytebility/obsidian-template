@@ -9,6 +9,7 @@
   "tasks-calendar-wrapper",
   "templater-obsidian",
   "various-complements",
+  "obsidian-linter",
   "image-converter",
   "obsidian-git",
   "folder-notes",
@@ -28,6 +29,5 @@
   "yearly-glance",
   "ace-code-editor",
   "obsidian-memos",
-  "obsidian-chinese-map-view",
-  "obsidian-linter"
+  "obsidian-chinese-map-view"
 ]
