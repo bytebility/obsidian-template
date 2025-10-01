@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "03Resource/GIS/杭州爬山路线.md",
+                    "file": "Diary/2025/2025-07-17.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -33,10 +33,35 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "杭州爬山路线"
+                  "title": "2025-07-17"
+                }
+              },
+              {
+                "id": "5a5a1f7fb25ea109",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Diary/2025/2025-10-01.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "2025-10-01"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "78857c6ae5117adf",
@@ -222,39 +247,6 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
-          },
-          {
-            "id": "e28a4f8455836ab0",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "03Resource/GIS/杭州爬山路线.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "杭州爬山路线 的反向链接列表"
-            }
-          },
-          {
-            "id": "50b397c3c7b47181",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "03Resource/GIS/杭州爬山路线.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "杭州爬山路线 的出链列表"
-            }
           }
         ]
       },
@@ -333,6 +325,7 @@
     "hiddenItems": {
       "obsidian-chinese-map-view:Open map view": false,
       "bases:创建新数据库": false,
+      "obsidian-memos:Thino": false,
       "yearly-glance:打开年度概览": false,
       "ace-code-editor:打开css片段管理器": false,
       "obsidian42-brat:BRAT": false,
@@ -350,16 +343,19 @@
       "obsidian-git:Open Git source control": false,
       "net-clip:NetClip": false,
       "infio-copilot:打开 Infio Copilot": false,
-      "obsidian-memos:Thino": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "c5cb75d852567bc4",
+  "active": "5a5a1f7fb25ea109",
   "lastOpenFiles": [
-    "03Resource/GIS/使用 Obsidian 打造个人 GIS 系统.md",
     "Diary/2025/2025-07-17.md",
-    "Diary/2025/2025-07-31.md",
+    "Diary/2025/2025-10-01.md",
     "03Resource/GIS/杭州爬山路线.md",
+    "Home/Home.canvas",
+    "Readme.md",
+    "03Resource/GIS/使用 Obsidian 打造个人 GIS 系统.md",
+    "Diary/2025/2025-07-31.md",
     "03Resource/GIS/兴趣点/好玩的.md",
     "03Resource/GIS/兴趣点/好吃的.md",
     "03Resource/GIS/兴趣点/兴趣点.md",
@@ -375,7 +371,6 @@
     "03Resource/GIS/assets/杭州爬山路线/file-20250929134340566.gpx",
     "03Resource/GIS/assets/杭州爬山路线/file-20250929134340560.gpx",
     "03Resource/GIS/assets/杭州爬山路线/file-20250929134340549.gpx",
-    "Readme.md",
     "Diary/2025/2025-07-18.md",
     "Diary/2025/2025-07-19.md",
     "Diary/2025/2025-07-27.md",
@@ -392,8 +387,6 @@
     "assets/Readme/home.png",
     "Diary/Diary.md",
     "课程设计/课程设计.md",
-    "Diary/2025/asdasd.md",
-    "Home/Home.canvas",
     "assets/Readme/xtool-logo.png",
     "files/xtool-logo.png",
     "files/home.png",
